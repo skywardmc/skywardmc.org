@@ -5,7 +5,7 @@ description: "Post install instructions for Adrenaline."
 style: "adrenaline"
 ---
 
-This page contains a few things you can do after installing Adrenaline to get better performance, better stability, etc. Some mods are already configured well enough to get improvements, so this guide will not include information about those. Depending on your system, you may or may not see an improvement, however on low-end systems you should notice an improvement. Some parts of this page were inspired by the Simply Optimized wiki.
+This page contains a few things you can do after installing Adrenaline to get better performance, better stability, etc.
 
 ## Improve performance
 
@@ -13,21 +13,29 @@ There are some ways to improve your performance past installation. Some of them 
 
 ### Extra mods to consider
 
+#### Nvidium (fork)
+
+Uses cutting edge NVIDIA features to render huge amounts of terrain geometry at much more playable framerates. Currently upstream is unmaintained and incompatible with current Sodium and Minecraft versions, so it cannot be installed with Adrenaline as of right now.
+
+However, if you are feeling adventurous, there is a fork of Nvidium maintained by drouarb that works on the latest versions. You can find builds [here](https://github.com/drouarb/nvidium/releases), but **please keep in mind that it is in beta and you should use it at your own risk**.
+
 #### [Concurrent Chunk Management Engine](https://modrinth.com/mod/c2me-fabric)
 
-C2ME is a mod designed to improve chunk performance using multi-threading. While on some systems this can increase chunk generation speeds and possibly improve framerates, the mod itself is an alpha and can be unstable at times - possibly, in rare cases, causing world corruption. If you don't care about the mod being experimental, you can install it manually after installing this modpack. Keep in mind that C2ME can possibly increase resource usage.
+Improves chunk performance using multi-threading. It's included in Adrenaline when installed on servers, but not on the client. The reasoning for that is because it can reduce rendering performance while also not really granting a benefit in singleplayer. You should only need to install it on the client if:
 
-#### [Exordium](https://modrinth.com/mod/exordium)
+- You have multiple players on the integrated server (open to LAN)
+- You are using mods such as Chunky and want faster generation
+- You are using complex worldgen mods such as Terralith
 
-Exordium aims to render the GUI and screens at a lower framerate to speed up world rendering. This is not included in Adrenaline due to possible mod conflicts and because it can make performance worse on GPU-bottlenecked setups. If you're CPU-bottlenecked and don't have any mod conflicts, consider checking this mod out.
+C2ME only has an impact when used on a dedicated server or in singleplayer (integrated server). It does not do anything when the client is connected to a server.
 
-#### [Sodium Extra](https://modrinth.com/mod/sodium-extra)
+#### [Immersive Optimization](https://modrinth.com/mod/immersive-optimization)
 
-This is an add-on to Sodium that adds some extra configuration settings for Sodium. It does not improve performance by itself, but it allows you to control various graphical effects such as particles and animations, which could improve performance at the cost of visuals. This is already included in Additive.
+Entity tick scheduler that improves logic performance without affecting Vanilla functionality. Not included in Adrenaline by default as it may have some rough edges. [May be implemented in the future](https://github.com/skywardmc/adrenaline/issues/53).
 
-#### [Methane](https://modrinth.com/mod/methane)
+#### [Moonrise](https://modrinth.com/mod/moonrise-opt)
 
-Methane completely removes the lighting engine from the client. This results in a major performance boost, however it does make the game look way worse as it removes the lighting engine :p If you don't care about visuals and just need the best performance, consider checking this out.
+An official port of several Paper patches to Fabric, improves logic performance. Not included in Adrenaline by default as it has many incompatibility issues. Supersedes a few mods including Starlight and C2ME.
 
 ### Setting your allocated memory
 
@@ -51,11 +59,11 @@ Before setting your memory used by Minecraft, you should first check your system
 
 </details>
 
-Allocating more memory to Minecraft may increase performance greatly, but setting it too high can cause issues as well. If you have a low amount of memory installed, please make sure to keep enough memory for your system. As a general recommendation, **2-4 GB (2048-4096 MB)** is usually all you should use for unchanged Adrenaline, Additive, or Vanilla. Playing with many mods? I'd suggest **3-6 GB (3074-6144 MB)**, however you may set this lower if needed. Do what works for you. _Never set your allocated memory to the same amount as your installed memory._
+Allocating more memory to Minecraft may reduce stutters and increase performance greatly if you are running out, but setting it too high can cause issues as well. If you have a low amount of memory installed, please make sure to keep enough memory for your system. As a general recommendation, **2-4 GB (2048-4096 MB)** is usually all you should use for unmodified Adrenaline, Additive, or Vanilla. Playing with many mods? I'd suggest **4-8 GB (4096-8192 MB)**, however you may set this lower if needed. Do what works for you. Do not set your allocated memory to the same amount as your installed memory, as you could run out of memory for the rest of your OS.\_
 
-If you are severely limited on memory, Adrenaline can run surprisingly well even with a minimum of 768 MB because of ModernFix and FerriteCore. Probably can be playable at even lower allocations, however I do not test with very low RAM so your mileage may vary.
+If you are severely limited on memory, unmodified Adrenaline can run surprisingly well even with a minimum of 768 MB because of ModernFix and FerriteCore. It can probably can be playable at even lower allocations, however I do not test with very low RAM so your mileage may vary.
 
-In Prism Launcher, you can set your memory by going to `Settings > Java > Maximum memory allocation`. You may set the minimum memory too, however I haven't noticed any improvement over using the default.
+In Prism Launcher, you can set your memory by going to `Settings > Java > Maximum memory allocation`. I'd advise that you keep the `Minimum memory allocation` unchanged.
 
 ### Change your Minecraft settings
 
@@ -77,19 +85,27 @@ Set particles to "minimal"/"decreased" on low-end systems, and "all" on other sy
 
 ### MacOS half resolution
 
-If you're on a Mac with a Retina display, it is heavily recommended to install Sodium Extra and enable the "half resolution" option under the "Extra" tab. You will have to restart the game after enabling this. Retina displays have very high native resolutions, so running Minecraft at half resolution won't affect quality noticeably while resulting in a large boost in performance and battery life. If you're using Additive, Sodium Extra is already installed.
-
-_With Complementary Shaders on an M2 Macbook Air, I went from ~40 FPS to ~160 FPS after enabling this!_
+If you're on a Mac with a Retina display, it is heavily recommended to install [Sodium Extra](https://modrinth.com/mod/sodium-extra) and enable the "half resolution" option under the "Extra" tab. You will have to restart the game after enabling this. Retina displays have very high native resolutions, so running Minecraft at half resolution won't affect quality noticeably while resulting in a large boost in performance and battery life. If you're using Additive, Sodium Extra is already installed.
 
 ## Improve your experience
 
+Adrenaline is shipped extremely bare-bones and is designed to be flexible so that the user can customize their instance however they want to. Here are some commonly installed mods:
+
 ### Sodium add-ons
 
-First, you can get [Sodium Extra](https://modrinth.com/mod/sodium-extra). This mod lets you configure extra graphics options and also add an FPS counter in the corner of your screen. Next, get [Reese's Sodium Options](https://modrinth.com/mod/reeses-sodium-options). This mod improves the experience and looks of the Sodium menu. If you are using Additive, both of these are already included by default.
+One mod I recommend installing is [Sodium Extra](https://modrinth.com/mod/sodium-extra). This mod lets you configure extra graphics options and add an FPS counter in the corner of your screen. If you are using Additive, this is already included by default.
+
+On Minecraft versions older than mc1.21.11 you may also want to install [Reese's Sodium Options](https://modrinth.com/mod/reeses-sodium-options). This improves the layout of the Sodium menu. This is not needed on mc1.21.11 or later as Sodium has redesigned their menu.
 
 ### Shader support
 
-To get support for shaderpacks, install the [Iris Shaders](https://modrinth.com/mod/iris) mod and then go to the Video Settings menu. If you are using Additive, this is already included by default.
+To get support for shaderpacks, install the [Iris Shaders](https://modrinth.com/mod/iris) mod and then check it out in the `Video Settings` menu. If you are using Additive, this is already included by default.
+
+Iris does not come with built-in shaders. You can get shaders from [Modrinth](https://modrinth.com/discover/shaders), and then drop them in the `shaderpacks` folder.
+
+### Controller support
+
+To get controller support on Minecraft Java Edition, you can install [Controlify](https://modrinth.com/mod/controlify). This is especially handy if you are on a Steam Deck. If you are using Additive, this is already included by default.
 
 ### Immersive VR support
 

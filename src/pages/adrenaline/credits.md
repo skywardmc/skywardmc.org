@@ -13,7 +13,7 @@ style: "adrenaline"
 - [KasaiSora](https://www.youtube.com/@KasaiSora) mentioned Additive in this [video](https://www.youtube.com/watch?v=CxyKNzG1EcA)
 - [NotroDan](https://www.youtube.com/@NotroDan) used Adrenaline when trying to play on [a Raspberry Pi](https://www.youtube.com/watch?v=IIup1kf3oEA)
 - [Prism Launcher's website](https://prismlauncher.org/) features us on the home page, Linux download page, and [OptiFine alternatives](https://prismlauncher.org/wiki/getting-started/install-of-alternatives/) wiki page
-- [Sodium's installation page](https://github.com/CaffeineMC/sodium-fabric/wiki/Installation) recommends Additive as an alternative to OptiFine
+- The developers of Sodium currently recommend Adrenaline/Additive
 
 ## Forks/Modpacks
 
@@ -45,9 +45,8 @@ _based on Additive, and by extension, Adrenaline..._
 - [Simplicity QoL](https://modrinth.com/modpack/simplicity-qol) by [ReveredOxygen](https://modrinth.com/user/ReveredOxygen)
 - [Bedrock Reloaded](https://modrinth.com/modpack/bedrock-reloaded) by [SeriousFreezing](https://modrinth.com/user/SeriousFreezing)
 
-## Cool people
+## Other things
 
-- [HyperSoop](https://github.com/HyperSoop) created [Simply Optimized](https://modrinth.com/modpack/sop), which a few parts of this pack derive from.
 - [Gaming32](https://github.com/Gaming32) created the [Additive Installer](https://github.com/Gaming32/additive-installer), a simple and easy-to-use method to install Additive or Adrenaline.
 
 ## Mod creators

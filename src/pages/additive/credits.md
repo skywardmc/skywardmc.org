@@ -7,13 +7,13 @@ style: "additive"
 
 ## Endorsed/Featured
 
-- [BillyDaBongo](https://www.youtube.com/@BillyDaBongo) recommended Additive on this very awesome [video](https://www.youtube.com/watch?v=Zl7nzdbG1GI) along with other videos on their channel
-- [Cosmonautic](https://www.youtube.com/@Cosmxnautic) mentioned Adrenaline and Additive in this [video](https://www.youtube.com/watch?v=rq8Md9_jLIA) and a [short](https://www.youtube.com/shorts/f3t-JYKwkTc)
+- [BillyDaBongo](https://www.youtube.com/@BillyDaBongo) recommended Additive in this [video](https://www.youtube.com/watch?v=Zl7nzdbG1GI) along with other videos on their channel
+- [Cosmonautic](https://www.youtube.com/@Cosmxnautic) mentioned Adrenaline and Additive in this [short](https://www.youtube.com/shorts/f3t-JYKwkTc)
 - [AntKen](https://www.youtube.com/@AntKen) mentioned Additive in this [video](https://www.youtube.com/watch?v=qemHHe1I34A)
 - [KasaiSora](https://www.youtube.com/@KasaiSora) mentioned Additive in this [video](https://www.youtube.com/watch?v=CxyKNzG1EcA)
 - [NotroDan](https://www.youtube.com/@NotroDan) used Adrenaline when trying to play on [a Raspberry Pi](https://www.youtube.com/watch?v=IIup1kf3oEA)
 - [Prism Launcher's website](https://prismlauncher.org/) features us on the home page, Linux download page, and [OptiFine alternatives](https://prismlauncher.org/wiki/getting-started/install-of-alternatives/) wiki page
-- [Sodium's installation page](https://github.com/CaffeineMC/sodium-fabric/wiki/Installation) recommends Additive as an alternative to OptiFine
+- The developers of Sodium currently recommend Adrenaline/Additive
 
 ## Forks/Modpacks
 
@@ -30,9 +30,8 @@ _Want your modpack removed from this list? You can send me a message in the Disc
 - [Simplicity QoL](https://modrinth.com/modpack/simplicity-qol) by [ReveredOxygen](https://modrinth.com/user/ReveredOxygen)
 - [Bedrock Reloaded](https://modrinth.com/modpack/bedrock-reloaded) by [SeriousFreezing](https://modrinth.com/user/SeriousFreezing)
 
-## Cool people
+## Other things
 
-- [HyperSoop](https://github.com/HyperSoop) created [Simply Optimized](https://modrinth.com/modpack/sop), which a few parts of Adrenaline derive from, and by extension, Additive.
 - [Gaming32](https://github.com/Gaming32) created the [Additive Installer](https://github.com/Gaming32/additive-installer), a simple and easy-to-use method to install Additive or Adrenaline.
 
 ## Mod creators
