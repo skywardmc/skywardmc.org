@@ -19,6 +19,10 @@ Uses cutting edge NVIDIA features to render huge amounts of terrain geometry at 
 
 However, if you are feeling adventurous, there is a fork of Nvidium maintained by drouarb that works on the latest versions. You can find builds [here](https://github.com/drouarb/nvidium/releases), but **please keep in mind that it is in beta and you should use it at your own risk**.
 
+#### [Ixeris](https://modrinth.com/mod/ixeris)
+
+Implements buffered raw input and threaded event polling. Recommended if you use a mouse with a very high polling rate. Not included by default right now as I'm waiting for buffered raw input to be considered stable, but it will be added [once that time comes](https://github.com/skywardmc/adrenaline/issues/61).
+
 #### [Concurrent Chunk Management Engine](https://modrinth.com/mod/c2me-fabric)
 
 Improves chunk performance using multi-threading. It's included in Adrenaline when installed on servers, but not on the client. The reasoning for that is because it can reduce rendering performance while also not really granting a benefit in singleplayer. You should only need to install it on the client if:
