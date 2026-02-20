@@ -39,7 +39,7 @@ Entity tick scheduler that improves logic performance without affecting Vanilla 
 
 #### [Moonrise](https://modrinth.com/mod/moonrise-opt)
 
-An official port of several Paper patches to Fabric, improves logic performance. Not included in Adrenaline by default as it has many incompatibility issues. Supersedes a few mods including Starlight and C2ME.
+An official port of several Paper patches to Fabric, improves logic performance. Not included in Adrenaline as it is incompatible with a very large amount of mods. Supersedes a few mods including ScalableLux and C2ME. If you add this, you will have to remove ScalableLux and C2ME, and possibly other mods. See their Modrinth page for more information.
 
 ### Setting your allocated memory
 
