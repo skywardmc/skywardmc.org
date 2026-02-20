@@ -17,7 +17,7 @@ Adrenaline utilizes various performance mods to improve the game's logic and ren
 
 > ### Why aren't all of these server-side mods installed client-side?
 >
-> A few of these mods could cause issues when installed on the client, such as Krypton breaking certain connections. Along with that, pretty much none of them need to be installed client-side as they do not typically offer much of a benefit at all, unless you have your integrated server open to LAN and multiple players are active.
+> A few of these mods could cause issues when installed on the client, such as Krypton breaking certain connections. Along with that, there's no reason to install them client-side as they do not typically offer much of a benefit at all, unless you have your integrated server open to LAN and multiple players are active. They're mostly meant for dedicated servers.
 >
 > For those reasons, they are not automatically installed client-side. Carefully stripping out unnecessary mods results in less compatibility issues and improved stability, which follows one of Adrenaline's goals: remaining stable.
 >
