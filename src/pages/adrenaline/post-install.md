@@ -5,7 +5,7 @@ description: "Post install instructions for Adrenaline."
 style: "adrenaline"
 ---
 
-This page contains a few things you can do after installing Adrenaline to get better performance, better stability, etc.
+Out of the box, Adrenaline should be good enough for most people. However, this page contains a few things you can do after installing Adrenaline to possibly get better performance, stability, etc.
 
 ## Improve performance
 
@@ -40,6 +40,13 @@ Entity tick scheduler that improves logic performance without affecting Vanilla 
 #### [Moonrise](https://modrinth.com/mod/moonrise-opt)
 
 An official port of several Paper patches to Fabric, improves logic performance. Not included in Adrenaline as it is incompatible with a very large amount of mods. Supersedes a few mods including ScalableLux and C2ME. If you add this, you will have to remove ScalableLux and C2ME, and possibly other mods. See their Modrinth page for more information.
+
+#### [ThreadTweak](https://modrinth.com/mod/threadtweak)
+
+You may want to install ThreadTweak if you notice stutters when generating chunks. Otherwise, ThreadTweak is very likely not needed and could actually reduce performance in a couple scenarios.
+
+- Used to be shipped out of the box with Adrenaline, but [after some reasoning](https://github.com/skywardmc/adrenaline/issues/66), we have gotten rid of it.
+- If you do not want to use ThreadTweak, there are other mods that do the same thing, such as [StutterFix](https://modrinth.com/mod/stutterfix), or using the `mixin.perf.thread_priorities` mixin in ModernFix.
 
 ### Setting your allocated memory
 
