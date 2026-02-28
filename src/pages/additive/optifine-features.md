@@ -12,7 +12,6 @@ A common issue that people have is that every feature is in a separate mod. This
 Here is the list of OptiFine features that are present in this pack. If I have missed any and got anything wrong here, please let me know through the issue tracker or my Discord server. Link on the sidebar. Even if you aren't using Additive, this list can also be generally useful to figure out what to install, and you may want to share it with others!
 
 - ✅ Available
-- 🚧 Partial/WIP
 - ⛔ Unavailable
 
 | Feature                     | 1.21.11 | 1.21.10 | 1.21.1 (LTS) | 1.20.1 (LTS) | Provider (> means if not available then)                                                                                                        |

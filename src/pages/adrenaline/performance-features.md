@@ -23,6 +23,9 @@ Adrenaline utilizes various performance mods to improve the game's logic and ren
 >
 > C2ME may be one exception if you add extra mods regarding world generation, which is explained on the [post-install](/adrenaline/post-install) page.
 
+- ✅ Available
+- ⛔ Unavailable
+
 | Feature                                                                                                                                                       | Summary                                                                                                                                                                                             | 1.21.11 | 1.21.10 | 1.21.1 (LTS) | 1.20.1 (LTS) |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------- | ------------ | ------------ |
 | [Sodium](https://modrinth.com/mod/sodium) (client)                                                                                                            | Powerful rendering engine and optimization mod which improves performance and quality greatly.                                                                                                      | ✅      | ✅      | ✅           | ✅           |
