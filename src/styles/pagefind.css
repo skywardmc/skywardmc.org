@@ -1,9 +1,0 @@
-.pagefind-ui {
-	--pagefind-ui-primary: var(--dc-tx-1);
-	--pagefind-ui-text: var(--dc-tx-2);
-	--pagefind-ui-background: var(--dc-bg-2);
-	--pagefind-ui-border: var(--dc-bg-3);
-	--pagefind-ui-border-width: 1px;
-	--pagefind-ui-border-radius: 0.375rem;
-	--pagefind-ui-font: var(--dc-font);
-}

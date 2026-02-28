@@ -1,6 +1,3 @@
-/* theme for dev.css v4, a classless CSS framework - https://github.com/intergrav/dev.css */
-/* about: theme for Adrenaline's SkywardMC page */
-
 :root[data-style="adrenaline"] {
 	--dc-cs: light dark;
 	--dc-tx-1: light-dark(hsl(0, 0%, 0%), hsl(150, 60%, 90%));

@@ -1,6 +1,5 @@
 ---
 const { frontmatter } = Astro.props;
-import "@intergrav/dev.css";
 import "../styles/dcskywardmc.css";
 import "../styles/dcadrenaline.css";
 import "../styles/dcadditive.css";
@@ -16,25 +15,24 @@ import Footer from "../components/Footer.astro";
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<script src="@intergrav/dev.css/addon/responsive-sidebar.js"></script>
 		<title>{frontmatter.title} - SkywardMC</title>
 		<meta name="description" content={frontmatter.description} />
-		<!-- Additional meta tags for SEO -->
+
 		<meta name="robots" content="index, follow" />
 		<meta name="author" content="SkywardMC" />
 		<link rel="canonical" href={Astro.url.pathname} />
-		<!-- Open Graph Meta Tags -->
+
 		<meta property="og:title" content={`${frontmatter.title} - SkywardMC`} />
 		<meta property="og:description" content={frontmatter.description} />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={Astro.url.pathname} />
 		<meta property="og:image" content="/spray.png" />
-		<!-- Twitter Card Meta Tags -->
+
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={`${frontmatter.title} - SkywardMC`} />
 		<meta name="twitter:description" content={frontmatter.description} />
 		<meta name="twitter:image" content="/spray.png" />
-		<!-- Sitemap Link -->
+		
 		<link rel="sitemap" href="/sitemap-index.xml" />
 	</head>
 	<body>
