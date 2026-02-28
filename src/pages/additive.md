@@ -15,8 +15,8 @@ Additive is a simple, modern, open-source alternative to OptiFine for the most r
 - Camera zoom to see further
 - Dynamic lighting with items
 - Better grass and snow
-- OptiFine donator capes (and [free capes](https://github.com/skywardmc/additive/wiki/Supporter-cape))
-- Other features [listed here](https://github.com/skywardmc/additive/wiki/Give-up-OptiFine)
+- OptiFine donator capes (and [free capes](/additive/supporter-cape))
+- Other features [listed here](/additive/optifine-features)
 
 There are also these extra features included:
 
@@ -25,7 +25,7 @@ There are also these extra features included:
 - Modularity
   - Lets you disable features that are incompatible with other mods or features you dislike
 - Fast updates
-- Other features [listed here](https://github.com/skywardmc/additive/wiki/Extra-features)
+- Other features [listed here](/additive/extra-features)
 
 For more information, read through Additive's [Modrinth](https://modrinth.com/project/Additive) page.
 
