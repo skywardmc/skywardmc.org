@@ -70,11 +70,12 @@ Before setting your memory used by Minecraft, you should first check your system
 
 </details>
 
-Allocating more memory to Minecraft may reduce stutters and increase performance greatly if you are running out, but setting it too high can cause issues as well. If you have a low amount of memory installed, please make sure to keep enough memory for your system. As a general recommendation, **2-4 GB (2048-4096 MB)** is usually all you should use for unmodified Adrenaline, Additive, or Vanilla. Playing with many mods? I'd suggest **4-8 GB (4096-8192 MB)**, however you may set this lower if needed. Do what works for you. Do not set your allocated memory to the same amount as your installed memory, as you could run out of memory for the rest of your OS.\_
-
-If you are severely limited on memory, unmodified Adrenaline can run surprisingly well even with a minimum of 768 MB because of ModernFix and FerriteCore. It can probably can be playable at even lower allocations, however I do not test with very low RAM so your mileage may vary.
+Allocating more memory to Minecraft may reduce stutters and increase performance greatly if you are running out, but setting it too high can cause issues as well. If you have a low amount of memory installed, please make sure to keep enough memory for your system. As a general recommendation, **2-4 GB (2048-4096 MB)** is usually all you should use for unmodified Adrenaline, Additive, or Vanilla. Playing with many mods? I'd suggest **4-8 GB (4096-8192 MB)**, however you may set this lower if needed. Do what works for you. Do not set your allocated memory to the same amount as your installed memory, as you could run out of memory for the rest of your OS.
 
 In Prism Launcher, you can set your memory by going to `Settings > Java > Maximum memory allocation`. I'd advise that you keep the `Minimum memory allocation` unchanged.
+
+If you are severely limited on memory, you can probably run the game fine even at 1GB with unmodified Adrenaline. However, below 1GB is untested and not recommended. While I have been able to get it running even with lower than 512MB, it was nearly unplayable due to heavy stutters and sometimes crashes. If you need even more memory savings for whatever reason, you could try enabling ModernFix's `mixin.perf.deduplicate_location` at a cost of load time impact.
+
 
 ### Change your Minecraft settings
 
