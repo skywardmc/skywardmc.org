@@ -13,13 +13,8 @@ This page is a little less technical than Adrenaline's config changes page, as t
 
 - Performance mods and Minecraft settings
   - See [Adrenaline/Config changes](/adrenaline/config-changes)
-- Zoom
-  - Enable cinematic camera
 - Better Grass
   - Disable better grass
-- Capes
-  - Change cape type to MinecraftCapes
-  - Enable MinecraftCapes, Cosmetica, CloaksPlus
 - CIT Resewn
   - Turn on broken paths
     - *This is an experimental compatibility feature, but I have not had issues with it despite being enabled years ago*
@@ -27,7 +22,6 @@ This page is a little less technical than Adrenaline's config changes page, as t
   - Disable toasts
 - Iris Shaders
   - Disable update message
-  - Disable shaders
 - Mod Menu
   - Use Icon button style
   - Disable update checker
@@ -38,3 +32,14 @@ This page is a little less technical than Adrenaline's config changes page, as t
 - World Host
   - Disable online status
   - Disable friends menu
+
+## 1.21.1+ specific
+
+- Cape Provider
+  - Adjust cape order to: MinecraftCapes, OptiFine
+
+## 1.20.1 specific
+
+- Capes
+  - Change cape type to MinecraftCapes
+  - Enable MinecraftCapes, Cosmetica, CloaksPlus
