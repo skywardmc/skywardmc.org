@@ -76,7 +76,6 @@ In Prism Launcher, you can set your memory by going to `Settings > Java > Maximu
 
 If you are severely limited on memory, you can probably run the game fine even at 1GB with unmodified Adrenaline. However, below 1GB is untested and not recommended. While I have been able to get it running even with lower than 512MB, it was nearly unplayable due to heavy stutters and sometimes crashes. If you need even more memory savings for whatever reason, you could try enabling ModernFix's `mixin.perf.deduplicate_location` at a cost of load time impact.
 
-
 ### Change your Minecraft settings
 
 By default, Adrenaline does **not** change any of Minecraft's quality/graphics settings, except for simulation distance which will be explained later.

@@ -17,7 +17,7 @@ This page is a little less technical than Adrenaline's config changes page, as t
   - Disable better grass
 - CIT Resewn
   - Turn on broken paths
-    - *This is an experimental compatibility feature, but I have not had issues with it despite being enabled years ago*
+    - _This is an experimental compatibility feature, but I have not had issues with it despite being enabled years ago_
 - Fast Quit
   - Disable toasts
 - Iris Shaders
