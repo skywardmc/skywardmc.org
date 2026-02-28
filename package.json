@@ -4,15 +4,15 @@
 	"dependencies": {
 		"@astrojs/mdx": "^4.3.13",
 		"@astrojs/sitemap": "^3.7.0",
-		"@intergrav/dev.css": "^4.4.0",
+		"@fontsource-variable/inter": "^5.2.8",
 		"@lucide/astro": "^0.575.0",
 		"astro": "^5.18.0",
+		"astro-expressive-code": "^0.41.7",
+		"astro-icon": "^1.1.5",
 		"astro-pagefind": "^1.8.5",
 		"prettier": "^3.8.1",
+		"prettier-plugin-astro": "^0.14.1",
 		"sharp": "^0.34.5"
-	},
-	"devDependencies": {
-		"prettier-plugin-astro": "^0.14.1"
 	},
 	"type": "module"
 }
