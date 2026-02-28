@@ -5,7 +5,7 @@ description: "Hammer is a lightweight Minecraft modpack for (Neo)Forge that heav
 style: "hammer"
 ---
 
-<img alt="Adrenaline logo" src="https://raw.githubusercontent.com/skywardmc/art/refs/heads/main/hammer/logo_vector.svg" style="float: right; width: 8rem; height: 8rem; border: 1px solid var(--dc-bg-3); border-radius: 1.25rem; margin-inline-start: 1rem;" />
+<img alt="Hammer logo" src="https://raw.githubusercontent.com/skywardmc/art/refs/heads/main/hammer/logo_vector.svg" style="float: right; width: 8rem; height: 8rem; border: 1px solid var(--dc-bg-3); border-radius: 1.25rem; margin-inline-start: 1rem;" />
 
 Hammer is a lightweight, open-source modpack for (Neo)Forge that significantly improves Minecraft render and logic performance through various different mods and configurations.
 
