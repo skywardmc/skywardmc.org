@@ -1,4 +1,6 @@
 ---
+import { Icon } from "astro-icon/components";
+
 import "../styles/global.css";
 
 import Header from "../components/Header.astro";
@@ -43,7 +45,22 @@ const { title, description, style = "skywardmc" } = Astro.props;
 	<body
 		class="flex flex-col min-h-screen py-2 gap-2 text-skywardmc-offgray bg-skywardmc-offwhite dark:text-skywardmc-offwhite dark:bg-skywardmc-offgray"
 	>
-		<Header />
+		<header
+			class="flex justify-between items-center max-w-5xl w-full mx-auto px-4 sm:px-6"
+		>
+			<div class="flex items-center gap-1">
+				<img
+					src="/branding/skywardmc/logo.svg"
+					alt="SkywardMC Logo"
+					class="h-6 rounded-full"
+				/>
+				<h1
+					class="font-title font-bold text-skywardmc-black dark:text-skywardmc-white pt-0.5"
+				>
+					SkywardMC
+				</h1>
+			</div>
+		</header>
 		<main class="flex-1 w-full max-w-5xl mx-auto">
 			<Navigation />
 			<section
