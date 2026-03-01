@@ -1,15 +1,38 @@
 ---
+import { execSync } from "child_process";
+import FooterLink from "./FooterLink.astro";
 
+const commitHash = (() => {
+	try {
+		return execSync("git rev-parse HEAD").toString().trim();
+	} catch {
+		return "unknown";
+	}
+})();
 ---
 
-<footer>
+<footer class="flex flex-wrap gap-4 justify-between px-2 sm:px-4 text-sm">
 	<nav>
-		<ul>
-			<li><a href="https://github.com/skywardmc">GitHub</a></li>
-			<li>
-				<a href="https://modrinth.com/organization/skywardmc">Modrinth</a>
-			</li>
-			<li><a href="https://discord.gg/36Tv44cYte">Discord</a></li>
-		</ul>
+		<p class="flex flex-wrap flex-row gap-4">
+			<FooterLink
+				href="https://modrinth.com/organization/skywardmc"
+				icon="simple-icons:modrinth">Modrinth</FooterLink
+			>
+			<FooterLink href="/discord" icon="simple-icons:discord"
+				>Discord</FooterLink
+			>
+			<FooterLink href="https://github.com/intergrav" icon="simple-icons:github"
+				>GitHub</FooterLink
+			>
+		</p>
+	</nav>
+	<nav>
+		<p class="flex flex-wrap flex-row gap-4">
+			<FooterLink
+				href={`https://github.com/skywardmc/skywardmc.org/commit/${commitHash}`}
+				icon="lucide:hash"><code>{commitHash.substring(0, 7)}</code></FooterLink
+			>
+			<FooterLink href="/privacy" icon="lucide:cookie">Privacy</FooterLink>
+		</p>
 	</nav>
 </footer>

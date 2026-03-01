@@ -1,3 +1,3 @@
-# docs
+# skywardmc.org
 
-Site for SkywardMC, made with [Astro](https://astro.build) and [dev.css](https://github.com/intergrav/dev.css)
+Site for SkywardMC, made with [Astro](https://astro.build). Based on [devins.page](https://devins.page).

@@ -1,0 +1,29 @@
+---
+import IconLink from "./IconLink.astro";
+
+interface Props {
+	href: string;
+	icon?: string;
+	mode?: "auto" | "light" | "dark";
+	class?: string;
+}
+
+const { href, icon, mode = "auto", class: className } = Astro.props;
+---
+
+<IconLink
+	{href}
+	{icon}
+	class:list={[
+		"px-3 py-1 border-b-2 rounded-xs shadow-xs",
+		{
+			auto: "bg-skywardmc-white hover:bg-skywardmc-white/75 border-skywardmc-offgray dark:bg-skywardmc-gray dark:hover:bg-skywardmc-gray/75 dark:border-skywardmc-offwhite",
+			light:
+				"bg-skywardmc-white hover:bg-skywardmc-white/75 border-skywardmc-offgray",
+			dark: "bg-skywardmc-gray hover:bg-skywardmc-gray/75 border-skywardmc-offwhite",
+		}[mode],
+		className,
+	]}
+>
+	<slot />
+</IconLink>

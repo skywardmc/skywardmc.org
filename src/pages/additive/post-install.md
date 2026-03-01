@@ -1,6 +1,6 @@
 ---
-layout: "../../layouts/Layout.astro"
-title: "Additive/Post-install"
+layout: "../../layouts/WikiPage.astro"
+title: "Post-install"
 description: "Post install instructions for Additive."
 style: "additive"
 ---

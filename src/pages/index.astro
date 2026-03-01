@@ -1,0 +1,86 @@
+---
+import Layout from "../layouts/Layout.astro";
+import IconLink from "../components/IconLink.astro";
+---
+
+<Layout
+	title="Home"
+	description="SkywardMC is an organization that makes popular Minecraft modpacks, mods, and tools such as Adrenaline and Additive."
+	style="skywardmc"
+>
+	<section
+		class="p-4 sm:p-6 mb-4 flex flex-col items-center text-center gap-4 sm:gap-6 text-skywardmc-black bg-[url(/branding/skywardmc/background.svg)] bg-center bg-cover rounded-xs"
+	>
+		<img alt="SkywardMC" src="/branding/skywardmc/text-logo.svg" class="h-20" />
+		<p class="font-medium">
+			We're a community that makes useful Minecraft modpacks, mods, tools, and
+			more.
+		</p>
+		<div class="flex items-center justify-center flex-wrap gap-6 font-medium">
+			<IconLink
+				href="https://modrinth.com/organization/skywardmc"
+				icon="simple-icons:modrinth"
+			>
+				Modrinth
+			</IconLink>
+			<IconLink href="/discord" icon="simple-icons:discord"> Discord </IconLink>
+			<IconLink href="https://github.com/skywardmc" icon="simple-icons:github">
+				GitHub
+			</IconLink>
+		</div>
+	</section>
+	<section class="not-prose mb-4 grid grid-col md:grid-cols-2 gap-4 sm:gap-6">
+		<a class="focus:scale-105 hover:scale-105" href="/adrenaline">
+			<article
+				class="p-4 sm:p-6 h-full flex flex-col items-center justify-center text-center gap-2 text-skywardmc-black bg-[url(/branding/adrenaline/background.svg)] bg-center bg-cover rounded-xs"
+			>
+				<img alt="Adrenaline" src="/branding/adrenaline/text.svg" class="h-8" />
+				<p class="font-medium">
+					A lightweight, open-source performance modpack
+				</p>
+			</article>
+		</a>
+		<a class="focus:scale-105 hover:scale-105" href="/additive">
+			<article
+				class="p-4 sm:p-6 h-full flex flex-col items-center justify-center text-center gap-2 text-skywardmc-black bg-[url(/branding/additive/background.svg)] bg-center bg-cover rounded-xs"
+			>
+				<img alt="Additive" src="/branding/additive/text.svg" class="h-8" />
+				<p class="font-medium">
+					A simple, modern, open-source alternative to OptiFine
+				</p>
+			</article>
+		</a>
+		<a class="focus:scale-105 hover:scale-105" href="/hammer">
+			<article
+				class="p-4 sm:p-6 h-full flex flex-col items-center justify-center text-center gap-2 text-skywardmc-black bg-[url(/branding/hammer/background.svg)] bg-center bg-cover rounded-xs"
+			>
+				<img alt="Hammer" src="/branding/hammer/text.svg" class="h-8" />
+				<p class="font-medium">Port of Adrenaline to (Neo)Forge</p>
+			</article>
+		</a>
+		<a class="focus:scale-105 hover:scale-105" href="/drill">
+			<article
+				class="p-4 sm:p-6 h-full flex flex-col items-center justify-center text-center gap-2 text-skywardmc-black bg-[url(/branding/drill/background.svg)] bg-center bg-cover rounded-xs"
+			>
+				<img alt="Drill" src="/branding/drill/text.svg" class="h-8" />
+				<p class="font-medium">Port of Additive to (Neo)Forge</p>
+			</article>
+		</a>
+	</section>
+	<div class="prose dark:prose-invert max-w-full">
+		<p>
+			SkywardMC was started in 2021 by <a href="https://github.com/intergrav"
+				>Devin/intergrav</a
+			> (initially known as Devin's Projects), and has grown to become a larger group
+			of people maintaining various different Minecraft-related things.
+		</p>
+		<p>
+			This website was built with <a href="https://astro.build">Astro</a>,
+			here's the <a href="https://github.com/skywardmc/skywardmc.org"
+				>source code</a
+			>. It's heavily based off Devin's personal website, <a
+				href="https://devins.page">devins.page</a
+			>.
+		</p>
+	</div>
+</Layout>

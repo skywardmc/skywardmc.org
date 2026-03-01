@@ -1,7 +1,7 @@
 ---
-layout: "../../layouts/Layout.astro"
-title: "Additive/OptiFine features"
-description: "Additive's OptiFine replacement features in a table."
+layout: "../../layouts/WikiPage.astro"
+title: "OptiFine features"
+description: "All of the OptiFine features that Additive replaces."
 style: "additive"
 ---
 
@@ -10,9 +10,6 @@ OptiFine used to be the go-to solution for enhancing performance in Minecraft an
 A common issue that people have is that every feature is in a separate mod. This project aims to fix this by neatly organizing all these alternatives into an easy to maintain modpack, and configuring mods where needed. While some features may be missing temporarily when new versions of Minecraft release, the partial release of Additive is typically available faster than OptiFine. Have any ideas? Open up an issue with the name of the mod and what it does, and I may consider adding it.
 
 Here is the list of OptiFine features that are present in this pack. If I have missed any and got anything wrong here, please let me know through the issue tracker or my Discord server. Link on the sidebar. Even if you aren't using Additive, this list can also be generally useful to figure out what to install, and you may want to share it with others!
-
-- ✅ Available
-- ⛔ Unavailable
 
 | Feature                     | 1.21.11 | 1.21.10 | 1.21.1 (LTS) | 1.20.1 (LTS) | Provider (> means if not available then)                                                                                                        |
 | --------------------------- | ------- | ------- | ------------ | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |

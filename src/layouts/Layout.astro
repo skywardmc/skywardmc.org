@@ -1,46 +1,51 @@
 ---
-const { frontmatter } = Astro.props;
-import "../styles/dcskywardmc.css";
-import "../styles/dcadrenaline.css";
-import "../styles/dcadditive.css";
-import "../styles/dchammer.css";
+import "../styles/global.css";
+
 import Header from "../components/Header.astro";
-import WikiNavigation from "../components/WikiNavigation.astro";
+import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
+
+const { title, description, style } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" data-style={frontmatter.style}>
+<html lang="en" data-style={style}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>{frontmatter.title} - SkywardMC</title>
-		<meta name="description" content={frontmatter.description} />
+		<title>{title} - SkywardMC</title>
+		<meta name="description" content={description} />
 
 		<meta name="robots" content="index, follow" />
 		<meta name="author" content="SkywardMC" />
 		<link rel="canonical" href={Astro.url.pathname} />
 
-		<meta property="og:title" content={`${frontmatter.title} - SkywardMC`} />
-		<meta property="og:description" content={frontmatter.description} />
+		<meta property="og:title" content={`${title} - SkywardMC`} />
+		<meta property="og:description" content={description} />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={Astro.url.pathname} />
-		<meta property="og:image" content="/spray.png" />
+		<meta property="og:image" content="/branding/skywardmc/spray.png" />
 
 		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content={`${frontmatter.title} - SkywardMC`} />
-		<meta name="twitter:description" content={frontmatter.description} />
-		<meta name="twitter:image" content="/spray.png" />
-		
+		<meta name="twitter:title" content={`${title} - SkywardMC`} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content="/branding/skywardmc/spray.png" />
+
 		<link rel="sitemap" href="/sitemap-index.xml" />
 	</head>
-	<body>
+	<body
+		class="flex flex-col min-h-screen py-2 gap-2 text-skywardmc-offgray bg-skywardmc-offwhite dark:text-skywardmc-offwhite dark:bg-skywardmc-offgray"
+	>
 		<Header />
-		<WikiNavigation />
-		<main data-pagefind-body>
-			<h1 data-pagefind-meta="title">{frontmatter.title}</h1>
-			<slot />
+		<main class="flex-1 w-full max-w-5xl mx-auto">
+			<Navigation />
+			<section
+				data-pagefind-body
+				class="p-6 px-4 sm:px-6 sm:mx-2 sm:rounded-sm bg-skywardmc-white dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray"
+			>
+				<slot />
+			</section>
 		</main>
 		<Footer />
 	</body>

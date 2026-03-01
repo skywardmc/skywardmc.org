@@ -1,17 +1,37 @@
-<div class="AdditiveInstallerCard">
-	<div>
-		<p>Additive Installer</p>
-		<p>
-			<a href="https://github.com/skywardmc/additive-installer/releases/v1.0.5"
-				>v1.0.5</a
-			> - <a
-				href="https://github.com/skywardmc/additive-installer/commit/bf002f0dc00b244995b3816f49acd3182854f1ca"
-				>bf002f0</a
+---
+import { Icon } from "astro-icon/components";
+---
+
+<article
+	class="not-prose py-4 px-6 flex flex-col gap-4 max-w-96 w-fit rounded-xs shadow-xs text-skywardmc-offgray/100 dark:text-skywardmc-offwhite/100 border border-skywardmc-offgray/20 dark:border-skywardmc-offwhite/20 dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray"
+>
+	<div class="flex items-center gap-4">
+		<a
+			class="p-2 rounded-xs bg-skywardmc-offwhite hover:bg-skywardmc-offwhite/75 dark:bg-skywardmc-offgray dark:hover:bg-skywardmc-offgray/75"
+			href="https://github.com/skywardmc/additive-installer/releases/download/v1.0.5/additive-installer-1.0.5.jar"
+		>
+			<Icon name="lucide:download" class="text-2xl" />
+		</a>
+		<div class="flex flex-col">
+			<h1 class="font-medium">Additive Installer</h1>
+			<p
+				class="text-xs font-mono text-skywardmc-offgray/60 dark:text-skywardmc-offwhite/60"
 			>
-		</p>
+				<a
+					href="https://github.com/skywardmc/additive-installer/releases/v1.0.5"
+					class="hover:underline">v1.0.5</a
+				> •
+				<a
+					href="https://github.com/skywardmc/additive-installer/commit/bf002f0dc00b244995b3816f49acd3182854f1ca"
+					class="hover:underline">bf002f0</a
+				>
+			</p>
+		</div>
 	</div>
-	<a
-		href="https://github.com/skywardmc/additive-installer/releases/download/v1.0.5/additive-installer-1.0.5.jar"
-		><button>Download</button></a
-	>
-</div>
+	<p class="text-xs">
+		If you can't open the installer, try running <code
+			class="font-mono text-skywardmc-offgray/60 dark:text-skywardmc-offwhite/60"
+			>java -jar additive-installer-1.0.5.jar</code
+		> in a terminal.
+	</p>
+</article>

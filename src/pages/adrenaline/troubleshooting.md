@@ -1,6 +1,6 @@
 ---
-layout: "../../layouts/Layout.astro"
-title: "Adrenaline/Troubleshooting"
+layout: "../../layouts/WikiPage.astro"
+title: "Troubleshooting"
 description: "Troubleshooting information for Adrenaline."
 style: "adrenaline"
 ---

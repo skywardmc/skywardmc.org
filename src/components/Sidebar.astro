@@ -1,0 +1,74 @@
+---
+const currentPath = Astro.url.pathname;
+
+const sections = [
+	{
+		name: "Adrenaline",
+		path: "/adrenaline",
+		links: [
+			{ label: "Installation", href: "/adrenaline/installation" },
+			{ label: "Post-install", href: "/adrenaline/post-install" },
+			{
+				label: "Frequently asked questions",
+				href: "/adrenaline/frequently-asked-questions",
+			},
+			{
+				label: "Performance features",
+				href: "/adrenaline/performance-features",
+			},
+			{ label: "Config changes", href: "/adrenaline/config-changes" },
+			{ label: "Troubleshooting", href: "/adrenaline/troubleshooting" },
+			{ label: "Credits", href: "/adrenaline/credits" },
+		],
+	},
+	{
+		name: "Additive",
+		path: "/additive",
+		links: [
+			{ label: "Installation", href: "/additive/installation" },
+			{ label: "Post-install", href: "/additive/post-install" },
+			{
+				label: "Frequently asked questions",
+				href: "/additive/frequently-asked-questions",
+			},
+			{ label: "OptiFine features", href: "/additive/optifine-features" },
+			{ label: "Extra features", href: "/additive/extra-features" },
+			{ label: "Config changes", href: "/additive/config-changes" },
+			{ label: "Troubleshooting", href: "/additive/troubleshooting" },
+			{ label: "Supporter cape", href: "/additive/supporter-cape" },
+			{ label: "Credits", href: "/additive/credits" },
+		],
+	},
+	{
+		name: "Hammer",
+		path: "/hammer",
+		links: [],
+	},
+	{
+		name: "Drill",
+		path: "/drill",
+		links: [],
+	},
+];
+
+const activeSection = sections.find((s) => currentPath.startsWith(s.path));
+---
+
+<aside
+	class="md:w-48 p-4 sm:p-6 md:ps-0 sm:rounded-sm md:rounded-none md:rounded-r-sm bg-skywardmc-white dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray"
+>
+	<h1 class="text-xl pb-4 font-bold">Pages</h1>
+	<nav class="flex flex-col gap-1">
+		{
+			activeSection &&
+				activeSection.links.map((link) => (
+					<a
+						class={`p-3 py-1 rounded-xs ${currentPath === link.href ? "border-s-4 bg-skywardmc-offwhite/100 dark:bg-skywardmc-offgray/100" : "bg-skywardmc-offwhite/60 hover:bg-skywardmc-offwhite/100 dark:bg-skywardmc-offgray/60 dark:hover:bg-skywardmc-offgray/100"}`}
+						href={link.href}
+					>
+						{link.label}
+					</a>
+				))
+		}
+	</nav>
+</aside>

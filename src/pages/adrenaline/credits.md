@@ -1,6 +1,6 @@
 ---
-layout: "../../layouts/Layout.astro"
-title: "Adrenaline/Credits"
+layout: "../../layouts/WikiPage.astro"
+title: "Credits"
 description: "Credits for Adrenaline."
 style: "adrenaline"
 ---

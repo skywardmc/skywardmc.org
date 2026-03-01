@@ -1,6 +1,6 @@
 ---
-layout: "../../layouts/Layout.astro"
-title: "Additive/Config changes"
+layout: "../../layouts/WikiPage.astro"
+title: "Config changes"
 description: "All of the changes that Additive makes to mods and Vanilla configs."
 style: "additive"
 ---

@@ -1,30 +1,11 @@
 ---
-layout: "../../layouts/Layout.astro"
-title: "Adrenaline/Performance features"
-description: "Adrenaline's performance features in a table."
+layout: "../../layouts/WikiPage.astro"
+title: "Performance features"
+description: "All of the performance mods that Adrenaline uses."
 style: "adrenaline"
 ---
 
 Adrenaline utilizes various performance mods to improve the game's logic and rendering speed significantly, while being carefully designed to not include unnecessary fluff that could cause issues. Here is a list of mods that are included with Adrenaline, excluding library mods.
-
-> ### Adrenaline can be used on both clients or servers.
->
-> Adrenaline utilizes `mrpack`'s environment feature. Mods are either determined client-side, server-side, or both, which is carefully chosen based on overhead, purpose, and relevance.
->
-> If you install Adrenaline through a **launcher**, such as Prism Launcher or the Modrinth App, it will only install the mods that are marked as **client-side** or **both-side**.
->
-> If you install Adrenaline through an **installer designed to be used to manage servers**, such as mrpack-install or Docker Minecraft Server, it will only install the mods that are marked as **server-side** or **both-side**.
-
-> ### Why aren't all of these server-side mods installed client-side?
->
-> A few of these mods could cause issues when installed on the client, such as Krypton breaking certain connections. Along with that, there's no reason to install them client-side as they do not typically offer much of a benefit at all, unless you have your integrated server open to LAN and multiple players are active. They're mostly meant for dedicated servers.
->
-> For those reasons, they are not automatically installed client-side. Carefully stripping out unnecessary mods results in less compatibility issues and improved stability, which follows one of Adrenaline's goals: remaining stable.
->
-> C2ME may be one exception if you add extra mods regarding world generation, which is explained on the [post-install](/adrenaline/post-install) page.
-
-- ✅ Available
-- ⛔ Unavailable
 
 | Feature                                                                                                                                                       | Summary                                                                                                                                                                                             | 1.21.11 | 1.21.10 | 1.21.1 (LTS) | 1.20.1 (LTS) |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ------- | ------------ | ------------ |
@@ -45,3 +26,21 @@ Adrenaline utilizes various performance mods to improve the game's logic and ren
 | [ScalableLux](https://modrinth.com/mod/scalablelux) (server)                                                                                                  | Heavily improves the performance of light updates. (marked as server-side as it doesn't benefit singleplayer pretty much at all)                                                                    | ✅      | ✅      | ✅           | ✅           |
 | [Krypton](https://modrinth.com/mod/krypton) (server)                                                                                                          | Heavily optimizes Minecraft's networking stack on the server. (marked as server-side as it's only meant to be used on servers and can cause connection issues on client)                            | ✅      | ✅      | ✅           | ✅           |
 | [Very Many Players](https://modrinth.com/mod/vmp-fabric) (server)                                                                                             | Improves server performance at high playercounts through various methods. (marked as server-side as it doesn't benefit singleplayer pretty much at all)                                             | ✅      | ✅      | ✅           | ✅           |
+
+## Notes
+
+### Adrenaline can be used on both clients or servers.
+
+Adrenaline utilizes `mrpack`'s environment feature. Mods are either determined client-side, server-side, or both, which is carefully chosen based on overhead, purpose, and relevance.
+
+If you install Adrenaline through a **launcher**, such as Prism Launcher or the Modrinth App, it will only install the mods that are marked as **client-side** or **both-side**.
+
+If you install Adrenaline through an **installer designed to be used to manage servers**, such as mrpack-install or Docker Minecraft Server, it will only install the mods that are marked as **server-side** or **both-side**.
+
+### Why aren't all of these server-side mods installed client-side?
+
+A few of these mods could cause issues when installed on the client, such as Krypton breaking certain connections. Along with that, there's no reason to install them client-side as they do not typically offer much of a benefit at all, unless you have your integrated server open to LAN and multiple players are active. They're mostly meant for dedicated servers.
+
+For those reasons, they are not automatically installed client-side. Carefully stripping out unnecessary mods results in less compatibility issues and improved stability, which follows one of Adrenaline's goals: remaining stable.
+
+C2ME may be one exception if you add extra mods regarding world generation, which is explained on the [post-install](/adrenaline/post-install) page.

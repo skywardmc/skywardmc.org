@@ -1,0 +1,75 @@
+/* mostly adapted from https://devins.page for skywardmc */
+
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@import "@fontsource-variable/montserrat";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/source-serif-4";
+@import "@fontsource-variable/geist-mono";
+
+@theme {
+	/* neutral colors (off* is typically used for text and site background, others are used for content backgrounds) */
+	/* TODO: come up with better variable names for these colors */
+	--color-skywardmc-offwhite: hsl(200, 25%, 90%);
+	--color-skywardmc-white: hsl(200, 50%, 98%);
+	--color-skywardmc-offgray: hsl(200, 10%, 10%);
+	--color-skywardmc-gray: hsl(200, 10%, 20%);
+
+	/* oled color (only used for content backgrounds) */
+	--color-skywardmc-black: #000000;
+
+	/* accent colors */
+	--color-skywardmc-red: #c85454;
+	--color-skywardmc-orange: #c78242;
+	--color-skywardmc-yellow: #c5bf45;
+	--color-skywardmc-green: #77b448;
+	--color-skywardmc-blue: #565be0;
+	--color-skywardmc-indigo: #7c47d3;
+	--color-skywardmc-violet: #cc4bbe;
+
+	/* font families */
+	--font-title: "Montserrat Variable", var(--font-sans), sans-serif;
+	--font-sans:
+		"Inter Variable", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-serif:
+		"Source Serif 4 Variable", ui-serif, Georgia, Cambria, "Times New Roman",
+		Times, serif;
+	--font-mono:
+		"Geist Mono Variable", ui-monospace, SFMono-Regular, Menlo, Monaco,
+		Consolas, "Liberation Mono", "Courier New", monospace;
+	--font-cursive: cursive;
+}
+
+:root {
+	color-scheme: light dark;
+}
+
+:root[data-style="adrenaline"] {
+	--color-skywardmc-offwhite: hsl(160, 25%, 90%);
+	--color-skywardmc-white: hsl(160, 25%, 98%);
+	--color-skywardmc-offgray: hsl(160, 10%, 10%);
+	--color-skywardmc-gray: hsl(160, 10%, 20%);
+}
+
+:root[data-style="additive"] {
+	--color-skywardmc-offwhite: hsl(0, 25%, 90%);
+	--color-skywardmc-white: hsl(0, 25%, 98%);
+	--color-skywardmc-offgray: hsl(0, 10%, 10%);
+	--color-skywardmc-gray: hsl(0, 10%, 20%);
+}
+
+:root[data-style="hammer"] {
+	--color-skywardmc-offwhite: hsl(260, 25%, 90%);
+	--color-skywardmc-white: hsl(260, 25%, 98%);
+	--color-skywardmc-offgray: hsl(260, 10%, 10%);
+	--color-skywardmc-gray: hsl(260, 10%, 20%);
+}
+
+:root[data-style="drill"] {
+	--color-skywardmc-offwhite: hsl(320, 25%, 90%);
+	--color-skywardmc-white: hsl(320, 25%, 98%);
+	--color-skywardmc-offgray: hsl(320, 10%, 10%);
+	--color-skywardmc-gray: hsl(320, 10%, 20%);
+}

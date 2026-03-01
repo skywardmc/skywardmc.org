@@ -1,6 +1,6 @@
 ---
-layout: "../../layouts/Layout.astro"
-title: "Additive/Installation"
+layout: "../../layouts/WikiPage.astro"
+title: "Installation"
 description: "How to install the Additive performance modpack for Minecraft."
 style: "additive"
 ---
@@ -9,20 +9,20 @@ import AdditiveInstallerCard from "../../components/AdditiveInstallerCard.astro"
 import { Picture } from "astro:assets";
 import AdditiveInstallerAdditive from "../../assets/images/additive-installer_additive.png";
 
-You can install Additive through our free and open-source installer by clicking the button below. Alternatively, if you want to install Additive through a third-party launcher, follow [Modrinth's documentation](https://support.modrinth.com/en/articles/8802250-modpacks-on-modrinth).
+You can install Additive through our free and open-source installer by clicking the button below and running it. You will need Java installed on your system to run the installer.
 
 <AdditiveInstallerCard />
 
 <Picture
-	alt="Screenshot of the Additive installer"
+	alt="Screenshot of the Additive installer, with Adrenaline selected"
 	src={AdditiveInstallerAdditive}
 	formats={["avif", "webp"]}
 	width={486}
 	densities={[1, 2]}
-	style="margin-inline: auto; border: 1px solid var(--dc-bg-3); border-radius: 0.75rem;"
+	class="not-prose"
 />
 
-The Additive installer works on Windows, MacOS, and Linux. If you can't open the installer, try running `java -jar additive-installer-1.0.4.jar` in a terminal. You need Java installed.
+Alternatively, if you want to install Adrenaline through a third-party launcher, you can follow [Modrinth's documentation](https://support.modrinth.com/en/articles/8802250-modpacks-on-modrinth). If you manage extra mods manually, this is heavily recommended.
 
 <details>
 <summary>Installing on Steam Deck</summary>

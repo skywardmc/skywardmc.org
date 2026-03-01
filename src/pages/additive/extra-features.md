@@ -1,16 +1,13 @@
 ---
-layout: "../../layouts/Layout.astro"
-title: "Additive/Extra features"
-description: "Additive's extra features in a table."
+layout: "../../layouts/WikiPage.astro"
+title: "Extra features"
+description: "All of Additive's extra features."
 style: "additive"
 ---
 
 While Additive is designed as an open-source OptiFine alternative, it does have a small set of extra features that are not from OptiFine. For the list of OptiFine features, see the [OptiFine Features](/additive/optifine-features) wiki page.
 
 To be honest, a couple of these are quite opinionated and are just very light and stable mods I use which I thought that many users could find helpful. I do not intend on adding any more unless absolutely necessary, as I don't want this pack to become bloated.
-
-- ✅ Available
-- ⛔ Unavailable
 
 | Feature                                                                                  | 1.21.11 | 1.21.10 | 1.21.1 (LTS) | 1.20.1 (LTS) | Function                                                                                                                                         | Notes                                                                                                                          |
 | ---------------------------------------------------------------------------------------- | ------- | ------- | ------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |

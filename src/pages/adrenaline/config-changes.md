@@ -1,6 +1,6 @@
 ---
-layout: "../../layouts/Layout.astro"
-title: "Adrenaline/Config changes"
+layout: "../../layouts/WikiPage.astro"
+title: "Config changes"
 description: "All of the changes that Adrenaline makes to mods and Vanilla configs."
 style: "adrenaline"
 ---

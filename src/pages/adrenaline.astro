@@ -1,0 +1,90 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+import IconLink from "../components/IconLink.astro";
+---
+
+<Layout
+	title="Adrenaline"
+	description="Adrenaline is a lightweight Minecraft modpack that heavily improves FPS and logic performance through various optimization mods."
+	style="adrenaline"
+>
+	<section
+		class="p-4 mb-4 sm:p-6 sm:mb-6 flex flex-col items-center text-center gap-4 sm:gap-6 text-skywardmc-black bg-[url(/branding/adrenaline/background.svg)] bg-center bg-cover rounded-xs"
+	>
+		<img
+			alt="Adrenaline"
+			src="/branding/adrenaline/text-logo.svg"
+			class="h-24"
+		/>
+		<p class="font-medium">
+			A lightweight, open-source performance modpack for Minecraft
+		</p>
+		<div class="flex items-center justify-center flex-wrap gap-2">
+			<Button
+				href="/adrenaline/installation"
+				icon="lucide:download"
+				mode="light"
+			>
+				Install
+			</Button>
+			<Button href="/adrenaline/installation" icon="lucide:book" mode="light">
+				Wiki
+			</Button>
+			<Button
+				href="https://github.com/skywardmc/adrenaline/issues"
+				icon="lucide:circle-dot"
+				mode="light"
+			>
+				Issues
+			</Button>
+		</div>
+		<div class="flex items-center justify-center flex-wrap gap-6 font-medium">
+			<IconLink
+				href="https://modrinth.com/project/adrenaline"
+				icon="simple-icons:modrinth"
+			>
+				Modrinth
+			</IconLink>
+			<IconLink
+				href="https://github.com/skywardmc/adrenaline"
+				icon="simple-icons:github"
+			>
+				GitHub
+			</IconLink>
+		</div>
+	</section>
+
+	<section class="prose dark:prose-invert max-w-full">
+		<p>
+			Adrenaline is a lightweight, open-source modpack that significantly
+			improves Minecraft render and logic performance through various different
+			mods and configurations. You can install it on either your client or
+			server - installation instructions are below.
+		</p>
+		<p>
+			The aim of this project is to make the game run as well as possible while
+			being stable enough for production use. It's default installation is very
+			minimal for flexibility, so you may want to install some of your own mods
+			afterwards, such as Mod Menu or Sodium Extra.
+		</p>
+		<p>
+			Here is the <a href="/adrenaline/performance-features">list of mods</a> used
+			to improve performance. Some mods are only installed depending on the environment
+			you install it in, such as a server or client. Benchmarks are not provided as
+			it can significantly differ depending on device, so I'd suggest you try it out
+			yourself.
+		</p>
+		<p>
+			For more information, read through Adrenaline's <a
+				href="https://modrinth.com/project/Adrenaline">Modrinth</a
+			> page.
+		</p>
+		<h2>Installation</h2>
+		<p>
+			If you want to install Adrenaline, see the <a
+				href="/adrenaline/installation">Adrenaline/Installation</a
+			> page.
+		</p>
+	</section>
+</Layout>

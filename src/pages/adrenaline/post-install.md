@@ -1,6 +1,6 @@
 ---
-layout: "../../layouts/Layout.astro"
-title: "Adrenaline/Post-install"
+layout: "../../layouts/WikiPage.astro"
+title: "Post-install"
 description: "Post install instructions for Adrenaline."
 style: "adrenaline"
 ---

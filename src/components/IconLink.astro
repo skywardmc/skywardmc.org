@@ -1,0 +1,19 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+	href: string;
+	icon?: string;
+	class?: string;
+}
+
+const { href, icon, class: className } = Astro.props;
+---
+
+<a
+	href={href}
+	class:list={["inline-flex gap-1 items-center hover:underline", className]}
+>
+	{icon && <Icon name={icon} />}
+	<slot />
+</a>

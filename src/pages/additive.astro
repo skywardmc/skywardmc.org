@@ -1,0 +1,103 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+import IconLink from "../components/IconLink.astro";
+---
+
+<Layout
+	title="Additive"
+	description="Additive is a simple, modern, open-source alternative to OptiFine."
+	style="additive"
+>
+	<section
+		class="p-4 sm:p-6 mb-4 flex flex-col items-center text-center gap-4 sm:gap-6 text-skywardmc-black bg-[url(/branding/additive/background.svg)] bg-center bg-cover rounded-xs"
+	>
+		<img alt="Additive" src="/branding/additive/text-logo.svg" class="h-20" />
+		<p class="font-medium">
+			A simple, modern, open-source alternative to OptiFine
+		</p>
+		<div class="flex items-center justify-center flex-wrap gap-2">
+			<Button href="/additive/installation" icon="lucide:download" mode="light">
+				Install
+			</Button>
+			<Button href="/additive/installation" icon="lucide:book" mode="light">
+				Wiki
+			</Button>
+			<Button
+				href="https://github.com/skywardmc/additive/issues"
+				icon="lucide:circle-dot"
+				mode="light"
+			>
+				Issues
+			</Button>
+		</div>
+		<div class="flex items-center justify-center flex-wrap gap-6 font-medium">
+			<IconLink
+				href="https://modrinth.com/project/additive"
+				icon="simple-icons:modrinth"
+			>
+				Modrinth
+			</IconLink>
+			<IconLink
+				href="https://github.com/skywardmc/additive"
+				icon="simple-icons:github"
+			>
+				GitHub
+			</IconLink>
+		</div>
+	</section>
+	<div class="prose dark:prose-invert max-w-full">
+		<p>
+			Additive is a simple, modern, open-source alternative to OptiFine. It has
+			basically every feature from OptiFine, including:
+		</p>
+		<ul>
+			<li>Major FPS and logic performance improvements</li>
+			<li>Built-in shader pack support</li>
+			<li>Extra resource pack features, e.g. CIT</li>
+			<li>Camera zoom to see further</li>
+			<li>Dynamic lighting with items</li>
+			<li>Better grass and snow</li>
+			<li>
+				OptiFine donator capes (and <a href="/additive/supporter-cape"
+					>free capes</a
+				>)
+			</li>
+			<li>
+				Other features <a href="/additive/optifine-features">listed here</a>
+			</li>
+		</ul>
+		<p>There are also these extra features included:</p>
+		<ul>
+			<li>
+				Free, simple world hosting<ul>
+					<li>
+						Simply click "Open Externally" in the menu of your world and you'll
+						get a shareable IP
+					</li>
+				</ul>
+			</li>
+			<li>
+				Modularity<ul>
+					<li>
+						Lets you disable features that are incompatible with other mods or
+						features you dislike
+					</li>
+				</ul>
+			</li>
+			<li>Fast updates</li>
+			<li>Other features <a href="/additive/extra-features">listed here</a></li>
+		</ul>
+		<p>
+			For more information, read through Additive's <a
+				href="https://modrinth.com/project/Additive">Modrinth</a
+			> page.
+		</p>
+		<h2>Installation</h2>
+		<p>
+			If you want to install Additive, see the <a href="/additive/installation"
+				>Additive/Installation</a
+			> page.
+		</p>
+	</div>
+</Layout>

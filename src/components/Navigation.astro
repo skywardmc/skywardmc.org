@@ -1,0 +1,81 @@
+---
+import { Icon } from "astro-icon/components";
+const currentPath = Astro.url.pathname;
+---
+
+<nav
+	class="flex gap-1 px-2 sm:px-4 overflow-y-hidden overflow-x-auto sticky top-0 z-50 bg-skywardmc-offwhite dark:bg-skywardmc-offgray"
+>
+	<a
+		href="/"
+		class:list={[
+			"px-4 py-0.5 rounded-t-sm",
+			"inline-flex gap-1 items-center",
+			currentPath === "/"
+				? "bg-skywardmc-white dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray"
+				: "hover:bg-skywardmc-white/40 hover:dark:bg-skywardmc-black/40 hover:sm:dark:bg-skywardmc-gray/40",
+		]}
+	>
+		<Icon name="lucide:house" /> Home
+	</a>
+	<a
+		href="/adrenaline"
+		class:list={[
+			"px-4 py-0.5 rounded-t-sm",
+			"inline-flex gap-1 items-center",
+			currentPath.startsWith("/adrenaline")
+				? "bg-skywardmc-white dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray"
+				: "hover:bg-skywardmc-white/40 hover:dark:bg-skywardmc-black/40 hover:sm:dark:bg-skywardmc-gray/40",
+		]}
+	>
+		<Icon name="lucide:syringe" /> Adrenaline
+	</a>
+	<a
+		href="/additive"
+		class:list={[
+			"px-4 py-0.5 rounded-t-sm",
+			"inline-flex gap-1 items-center",
+			currentPath.startsWith("/additive")
+				? "bg-skywardmc-white dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray"
+				: "hover:bg-skywardmc-white/40 hover:dark:bg-skywardmc-black/40 hover:sm:dark:bg-skywardmc-gray/40",
+		]}
+	>
+		<Icon name="lucide:test-tube-diagonal" /> Additive
+	</a>
+	<a
+		href="/hammer"
+		class:list={[
+			"px-4 py-0.5 rounded-t-sm",
+			"inline-flex gap-1 items-center",
+			currentPath.startsWith("/hammer")
+				? "bg-skywardmc-white dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray"
+				: "hover:bg-skywardmc-white/40 hover:dark:bg-skywardmc-black/40 hover:sm:dark:bg-skywardmc-gray/40",
+		]}
+	>
+		<Icon name="lucide:hammer" /> Hammer
+	</a>
+	<a
+		href="/drill"
+		class:list={[
+			"px-4 py-0.5 rounded-t-sm",
+			"inline-flex gap-1 items-center",
+			currentPath.startsWith("/drill")
+				? "bg-skywardmc-white dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray"
+				: "hover:bg-skywardmc-white/40 hover:dark:bg-skywardmc-black/40 hover:sm:dark:bg-skywardmc-gray/40",
+		]}
+	>
+		<Icon name="lucide:drill" /> Drill
+	</a>
+	<a
+		href="/search"
+		class:list={[
+			"px-4 py-0.5 rounded-t-sm",
+			"ml-auto inline-flex gap-1 items-center",
+			currentPath.startsWith("/search")
+				? "bg-skywardmc-white dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray"
+				: "hover:bg-skywardmc-white/40 hover:dark:bg-skywardmc-black/40 hover:sm:dark:bg-skywardmc-gray/40",
+		]}
+	>
+		<Icon name="lucide:search" /> Search
+	</a>
+</nav>

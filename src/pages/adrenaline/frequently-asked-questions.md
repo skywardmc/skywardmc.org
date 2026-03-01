@@ -1,6 +1,6 @@
 ---
-layout: "../../layouts/Layout.astro"
-title: "Adrenaline/Frequently asked questions"
+layout: "../../layouts/WikiPage.astro"
+title: "Frequently asked questions"
 description: "Frequently asked questions about Adrenaline."
 style: "adrenaline"
 ---

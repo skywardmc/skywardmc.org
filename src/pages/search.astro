@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Search from "astro-pagefind/components/Search";
+---
+
+<Layout title="Find" description="Search all content of skywardmc.org">
+	<div class="prose prose-sm dark:prose-invert max-w-full">
+		<Search />
+		<p class="text-right">
+			thanks <a href="https://pagefind.app">pagefind</a> &lt;3
+		</p>
+	</div>
+</Layout>
+
+<style>
+	:root {
+		--pagefind-ui-scale: 0.75;
+		--pagefind-ui-primary: var(--color-skywardmc-blue);
+		--pagefind-ui-text: var(--color-skywardmc-offgray);
+		--pagefind-ui-background: var(--color-skywardmc-offwhite);
+		--pagefind-ui-border: none;
+		--pagefind-ui-tag: var(--color-skywardmc-offgray);
+		--pagefind-ui-border-width: none;
+		--pagefind-ui-border-radius: 0.125rem;
+		--pagefind-ui-image-border-radius: 0.125rem;
+		--pagefind-ui-image-box-ratio: 16 / 10;
+		--pagefind-ui-font: var(--default-font-family);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--pagefind-ui-primary: var(--color-skywardmc-blue);
+			--pagefind-ui-text: var(--color-skywardmc-offwhite);
+			--pagefind-ui-background: var(--color-skywardmc-offgray);
+			--pagefind-ui-tag: var(--color-skywardmc-offwhite);
+		}
+	}
+</style>

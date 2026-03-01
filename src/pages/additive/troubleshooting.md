@@ -1,6 +1,6 @@
 ---
-layout: "../../layouts/Layout.astro"
-title: "Additive/Troubleshooting"
+layout: "../../layouts/WikiPage.astro"
+title: "Troubleshooting"
 description: "Troubleshooting information for Additive."
 style: "additive"
 ---

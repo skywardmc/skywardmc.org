@@ -1,6 +1,6 @@
 ---
-layout: "../../layouts/Layout.astro"
-title: "Additive/Credits"
+layout: "../../layouts/WikiPage.astro"
+title: "Credits"
 description: "Credits for Additive."
 style: "additive"
 ---
