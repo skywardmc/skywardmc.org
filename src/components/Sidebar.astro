@@ -1,5 +1,5 @@
 ---
-const currentPath = Astro.url.pathname;
+const currentPath = Astro.url.pathname.replace(/\/$/, "");
 
 const sections = [
 	{
@@ -63,7 +63,7 @@ const activeSection = sections.find((s) => currentPath.startsWith(s.path));
 			activeSection &&
 				activeSection.links.map((link) => (
 					<a
-						class={`p-3 py-1 rounded-xs ${currentPath === link.href ? "border-s-4 bg-skywardmc-offwhite/100 dark:bg-skywardmc-offgray/100" : "bg-skywardmc-offwhite/60 hover:bg-skywardmc-offwhite/100 dark:bg-skywardmc-offgray/60 dark:hover:bg-skywardmc-offgray/100"}`}
+						class={`p-3 py-1 rounded-xs ${currentPath === link.href.replace(/\/$/, "") ? "border-s-4 bg-skywardmc-offwhite dark:bg-skywardmc-offgray" : "bg-skywardmc-offwhite/60 hover:bg-skywardmc-offwhite dark:bg-skywardmc-offgray/60 dark:hover:bg-skywardmc-offgray"}`}
 						href={link.href}
 					>
 						{link.label}
