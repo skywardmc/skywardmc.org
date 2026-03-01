@@ -5,7 +5,7 @@ description: "Post install instructions for Adrenaline."
 style: "adrenaline"
 ---
 
-Out of the box, Adrenaline should be good enough for most people. However, this page contains a few things you can do after installing Adrenaline to possibly get better performance, stability, etc.
+Out of the box, Adrenaline should be good enough for most people. However, this page contains a few things you can do after installing Adrenaline to possibly get better performance, etc.
 
 ## Improve performance
 

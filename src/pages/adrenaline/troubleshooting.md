@@ -19,4 +19,4 @@ If you are experiencing issues with GUI, try disabling ImmediatelyFast. Immediat
 
 ## Having other issues
 
-Join my [Discord server](https://discord.gg/36Tv44cYte) and I (or community members) can try to help with your issue as long as I'm not busy.
+Join our [Discord server](https://discord.gg/36Tv44cYte) and I (or community members) can try to help with your issue as long as I'm not busy.
