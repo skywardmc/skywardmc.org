@@ -104,5 +104,6 @@
 	--tw-prose-invert-quote-borders: var(--color-skywardmc-white);
 	--tw-prose-invert-captions: var(--color-skywardmc-offwhite);
 	--tw-prose-invert-code: var(--color-skywardmc-white);
+	--tw-prose-invert-th-borders: var(--color-skywardmc-offgray);
 	--tw-prose-invert-td-borders: var(--color-skywardmc-offgray);
 }
