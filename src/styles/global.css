@@ -73,3 +73,36 @@
 	--color-skywardmc-offgray: hsl(320, 10%, 10%);
 	--color-skywardmc-gray: hsl(320, 10%, 20%);
 }
+
+@utility prose-skywardmc {
+	--tw-prose-body: var(--color-skywardmc-offgray);
+	--tw-prose-headings: var(--color-skywardmc-gray);
+	--tw-prose-lead: var(--color-skywardmc-offgray);
+	--tw-prose-links: var(--color-skywardmc-gray);
+	--tw-prose-bold: var(--color-skywardmc-gray);
+	--tw-prose-counters: var(--color-skywardmc-gray);
+	--tw-prose-bullets: var(--color-skywardmc-gray);
+	--tw-prose-hr: var(--color-skywardmc-offwhite);
+	--tw-prose-quotes: var(--color-skywardmc-gray);
+	--tw-prose-quote-borders: var(--color-skywardmc-gray);
+	--tw-prose-captions: var(--color-skywardmc-offgray);
+	--tw-prose-code: var(--color-skywardmc-gray);
+	--tw-prose-pre-code: var(--color-skywardmc-white);
+	--tw-prose-pre-bg: var(--color-skywardmc-offgray);
+	--tw-prose-th-borders: var(--color-skywardmc-offwhite);
+	--tw-prose-td-borders: var(--color-skywardmc-offwhite);
+
+	--tw-prose-invert-body: var(--color-skywardmc-offwhite);
+	--tw-prose-invert-headings: var(--color-skywardmc-white);
+	--tw-prose-invert-lead: var(--color-skywardmc-offwhite);
+	--tw-prose-invert-links: var(--color-skywardmc-white);
+	--tw-prose-invert-bold: var(--color-skywardmc-white);
+	--tw-prose-invert-counters: var(--color-skywardmc-white);
+	--tw-prose-invert-bullets: var(--color-skywardmc-white);
+	--tw-prose-invert-hr: var(--color-skywardmc-offgray);
+	--tw-prose-invert-quotes: var(--color-skywardmc-white);
+	--tw-prose-invert-quote-borders: var(--color-skywardmc-white);
+	--tw-prose-invert-captions: var(--color-skywardmc-offwhite);
+	--tw-prose-invert-code: var(--color-skywardmc-white);
+	--tw-prose-invert-td-borders: var(--color-skywardmc-offgray);
+}
