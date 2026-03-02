@@ -1,0 +1,47 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface NavItem {
+	href: string;
+	icon: string;
+	label: string;
+	alignEnd?: boolean;
+}
+
+const navItems: NavItem[] = [
+	{ href: "/", icon: "lucide:house", label: "Home" },
+	{ href: "/adrenaline", icon: "lucide:syringe", label: "Adrenaline" },
+	{ href: "/additive", icon: "lucide:test-tube-diagonal", label: "Additive" },
+	{ href: "/hammer", icon: "lucide:hammer", label: "Hammer" },
+	{ href: "/drill", icon: "lucide:drill", label: "Drill" },
+	{ href: "/search", icon: "lucide:search", label: "Search", alignEnd: true },
+];
+---
+
+<nav
+	class="flex gap-1 px-2 sm:px-4 overflow-y-hidden overflow-x-auto sticky top-0 z-50 bg-skywardmc-offwhite dark:bg-skywardmc-offgray"
+>
+	{
+		navItems.map((item) => {
+			const isActive =
+				item.href === "/"
+					? Astro.url.pathname === "/"
+					: Astro.url.pathname.startsWith(item.href);
+			return (
+				<a
+					href={item.href}
+					class:list={[
+						"px-4 py-0.5 rounded-t-sm inline-flex gap-1 items-center",
+						item.alignEnd && "ms-auto",
+						isActive
+							? "bg-skywardmc-white dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray"
+							: "hover:bg-skywardmc-white/40 hover:dark:bg-skywardmc-black/40 hover:sm:dark:bg-skywardmc-gray/40",
+					]}
+				>
+					<Icon name={item.icon} />
+					{item.label}
+				</a>
+			);
+		})
+	}
+</nav>

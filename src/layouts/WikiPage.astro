@@ -1,92 +1,35 @@
 ---
 import { Icon } from "astro-icon/components";
-
-import "../styles/global.css";
-
-import Header from "../components/Header.astro";
-import Navigation from "../components/Navigation.astro";
+import BaseLayout from "./BaseLayout.astro";
 import Sidebar from "../components/Sidebar.astro";
-import Footer from "../components/Footer.astro";
 
 const { frontmatter } = Astro.props;
-const style = frontmatter.style ?? "skywardmc";
-const fullTitle = `${frontmatter.title} - ${style.charAt(0).toUpperCase() + style.slice(1)}`;
+const { title, description, style = "skywardmc" } = frontmatter;
 ---
 
-<!doctype html>
-<html lang="en" data-style={style}>
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>{fullTitle} - SkywardMC</title>
-		<meta name="description" content={frontmatter.description} />
-
-		<meta name="robots" content="index, follow" />
-		<meta name="author" content="SkywardMC" />
-		<link rel="canonical" href={Astro.url.pathname} />
-
-		<link
-			rel="icon"
-			type="image/svg+xml"
-			href={`/branding/${style}/icon.svg`}
+<BaseLayout
+	title={`${title} - ${style.charAt(0).toUpperCase() + style.slice(1)}`}
+	description={description}
+	style={style}
+>
+	<a href="#sidebar" class="text-2xl md:hidden" slot="header-end">
+		<Icon
+			name="lucide:square-menu"
+			class="text-skywardmc-black dark:text-skywardmc-white"
 		/>
-
-		<meta property="og:title" content={`${fullTitle} - SkywardMC`} />
-		<meta property="og:description" content={frontmatter.description} />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content={Astro.url.pathname} />
-		<meta property="og:image" content="/spray.png" />
-
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content={`${fullTitle} - SkywardMC`} />
-		<meta name="twitter:description" content={frontmatter.description} />
-		<meta name="twitter:image" content="/spray.png" />
-
-		<link rel="sitemap" href="/sitemap-index.xml" />
-	</head>
-	<body
-		class="flex flex-col min-h-screen py-2 gap-2 text-skywardmc-offgray bg-skywardmc-offwhite dark:text-skywardmc-offwhite dark:bg-skywardmc-offgray"
-	>
-		<header
-			class="flex justify-between items-center max-w-5xl w-full mx-auto px-4 sm:px-6"
+	</a>
+	<div class="sm:mx-2 flex flex-col gap-2 md:gap-0 md:flex-row">
+		<section
+			class="flex-1 w-full py-6 px-4 sm:px-6 sm:rounded-sm md:rounded-none md:rounded-l-sm bg-skywardmc-white dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray"
 		>
-			<div class="flex items-center gap-1">
-				<img
-					src="/branding/skywardmc/logo.svg"
-					alt="SkywardMC Logo"
-					class="h-6 rounded-full"
-				/>
-				<h1
-					class="font-title font-bold text-skywardmc-black dark:text-skywardmc-white pt-0.5"
-				>
-					SkywardMC
-				</h1>
+			<div
+				data-pagefind-body
+				class="prose dark:prose-invert max-w-full wrap-break-word prose-img:w-full prose-img:rounded-xs"
+			>
+				<h1 data-pagefind-meta="title">{title}</h1>
+				<slot />
 			</div>
-			<a class="text-2xl md:hidden" href="#sidebar">
-				<Icon
-					name="lucide:square-menu"
-					class="text-skywardmc-black dark:text-skywardmc-white"
-				/>
-			</a>
-		</header>
-		<main class="flex-1 w-full max-w-5xl mx-auto">
-			<Navigation />
-			<div class="sm:mx-2 flex flex-col gap-2 md:gap-0 md:flex-row">
-				<section
-					class="flex-1 w-full py-6 px-4 sm:px-6 sm:rounded-sm md:rounded-none md:rounded-l-sm bg-skywardmc-white dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray"
-				>
-					<div
-						data-pagefind-body
-						class="prose dark:prose-invert max-w-full wrap-break-word prose-img:w-full prose-img:rounded-xs"
-					>
-						<h1 data-pagefind-meta="title">{frontmatter.title}</h1>
-						<slot />
-					</div>
-				</section>
-				<Sidebar />
-			</div>
-		</main>
-		<Footer />
-	</body>
-</html>
+		</section>
+		<Sidebar />
+	</div>
+</BaseLayout>

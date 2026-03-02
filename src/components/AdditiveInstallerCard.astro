@@ -1,29 +1,32 @@
 ---
-import { Icon } from "astro-icon/components";
+import IconLink from "./IconLink.astro";
+
+const version = "1.0.5";
+const commitHash = "bf002f0dc00b244995b3816f49acd3182854f1ca";
 ---
 
 <article
 	class="not-prose py-4 px-6 flex flex-col gap-4 max-w-96 w-fit rounded-xs shadow-xs text-skywardmc-offgray dark:text-skywardmc-offwhite border border-skywardmc-offgray/20 dark:border-skywardmc-offwhite/20 dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray"
 >
 	<div class="flex items-center gap-4">
-		<a
-			class="p-2 rounded-xs bg-skywardmc-offwhite hover:bg-skywardmc-offwhite/75 dark:bg-skywardmc-offgray dark:hover:bg-skywardmc-offgray/75"
-			href="https://github.com/skywardmc/additive-installer/releases/download/v1.0.5/additive-installer-1.0.5.jar"
-		>
-			<Icon name="lucide:download" class="text-2xl" />
-		</a>
+		<IconLink
+			href={`https://github.com/skywardmc/additive-installer/releases/download/v${version}/additive-installer-${version}.jar`}
+			icon="lucide:download"
+			class="p-2 text-2xl bg-skywardmc-offwhite dark:bg-skywardmc-offgray rounded-xs"
+		/>
 		<div class="flex flex-col">
 			<h1 class="font-medium">Additive Installer</h1>
 			<p
 				class="text-xs font-mono text-skywardmc-offgray/60 dark:text-skywardmc-offwhite/60"
 			>
 				<a
-					href="https://github.com/skywardmc/additive-installer/releases/v1.0.5"
-					class="hover:underline">v1.0.5</a
-				> •
+					href={`https://github.com/skywardmc/additive-installer/releases/v${version}`}
+					class="hover:underline">v{version}</a
+				>
+				•
 				<a
-					href="https://github.com/skywardmc/additive-installer/commit/bf002f0dc00b244995b3816f49acd3182854f1ca"
-					class="hover:underline">bf002f0</a
+					href={`https://github.com/skywardmc/additive-installer/commit/${commitHash}`}
+					class="hover:underline">{commitHash.slice(0, 7)}</a
 				>
 			</p>
 		</div>
@@ -31,7 +34,7 @@ import { Icon } from "astro-icon/components";
 	<p class="text-xs">
 		If you can't open the installer, try running <code
 			class="font-mono text-skywardmc-offgray/60 dark:text-skywardmc-offwhite/60"
-			>java -jar additive-installer-1.0.5.jar</code
+			>java -jar additive-installer-{version}.jar</code
 		> in a terminal.
 	</p>
 </article>

@@ -1,38 +1,37 @@
 ---
 import { execSync } from "child_process";
-import FooterLink from "./FooterLink.astro";
+import IconLink from "./IconLink.astro";
 
-const commitHash = (() => {
-	try {
-		return execSync("git rev-parse HEAD").toString().trim();
-	} catch {
-		return "unknown";
-	}
-})();
+let commitHash = "unknown";
+try {
+	commitHash = execSync("git rev-parse HEAD").toString().trim();
+} catch {}
 ---
 
 <footer class="flex flex-wrap gap-4 justify-between px-2 sm:px-4 text-sm">
-	<nav>
-		<p class="flex flex-wrap flex-row gap-4">
-			<FooterLink
-				href="https://modrinth.com/organization/skywardmc"
-				icon="simple-icons:modrinth">Modrinth</FooterLink
-			>
-			<FooterLink href="/discord" icon="simple-icons:discord"
-				>Discord</FooterLink
-			>
-			<FooterLink href="https://github.com/skywardmc" icon="simple-icons:github"
-				>GitHub</FooterLink
-			>
-		</p>
+	<nav class="flex flex-wrap gap-4">
+		<IconLink
+			href="https://modrinth.com/organization/skywardmc"
+			icon="simple-icons:modrinth"
+		>
+			<span class="max-sm:hidden">Modrinth</span>
+		</IconLink>
+		<IconLink href="/discord" icon="simple-icons:discord">
+			<span class="max-sm:hidden">Discord</span>
+		</IconLink>
+		<IconLink href="https://github.com/skywardmc" icon="simple-icons:github">
+			<span class="max-sm:hidden">GitHub</span>
+		</IconLink>
 	</nav>
-	<nav>
-		<p class="flex flex-wrap flex-row gap-4">
-			<FooterLink
-				href={`https://github.com/skywardmc/skywardmc.org/commit/${commitHash}`}
-				icon="lucide:hash"><code>{commitHash.substring(0, 7)}</code></FooterLink
-			>
-			<FooterLink href="/privacy" icon="lucide:cookie">Privacy</FooterLink>
-		</p>
+	<nav class="flex flex-wrap gap-4">
+		<IconLink
+			href={`https://github.com/skywardmc/skywardmc.org/commit/${commitHash}`}
+			icon="lucide:hash"
+		>
+			<span class="max-sm:hidden"><code>{commitHash.slice(0, 7)}</code></span>
+		</IconLink>
+		<IconLink href="/privacy" icon="lucide:cookie">
+			<span class="max-sm:hidden">Privacy</span>
+		</IconLink>
 	</nav>
 </footer>
