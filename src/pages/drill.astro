@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import GitHubUser from "../components/GitHubUser.astro";
 ---
 
 <Layout
@@ -12,7 +13,7 @@ import Layout from "../layouts/Layout.astro";
 		src="https://raw.githubusercontent.com/skywardmc/art/refs/heads/main/drill/logo_vector.svg"
 		class="not-prose ms-4 float-end size-24 sm:size-32 rounded-sm"
 	/>
-	<div class="prose prose-skywardmc dark:prose-invert max-w-full">
+	<section class="prose prose-skywardmc dark:prose-invert max-w-full">
 		<p>
 			Drill is a modpack, developed for NeoForge, designed as an alternative to
 			OptiFine.
@@ -28,5 +29,11 @@ import Layout from "../layouts/Layout.astro";
 			Drill's wiki is currently a work-in-progress. For more information, read
 			through Drill's <a href="https://modrinth.com/project/drill">Modrinth</a> page.
 		</p>
-	</div>
+	</section>
+	<p class="mt-4 text-sm flex items-center justify-end gap-1">
+		Maintained by <GitHubUser user="omo50" class="font-bold" /> and <GitHubUser
+			user="MenacingPerson"
+			class="font-bold"
+		/>
+	</p>
 </Layout>
