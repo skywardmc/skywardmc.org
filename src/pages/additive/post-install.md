@@ -5,7 +5,7 @@ description: "Post install instructions for Additive."
 style: "additive"
 ---
 
-Out of the box, Additive should be good enough for most people. However, this page contains a few things you can do after installing Additive to possibly get better performance, stability, etc.
+Out of the box, Additive should be good enough for most people. However, this page contains a few things you can do after installing Additive to possibly get better performance, etc.
 
 ## Improve performance
 
@@ -86,7 +86,7 @@ Start by changing your render distance. The higher this number, the further you 
 
 After this, you can change your simulation distance. This is the distance in chunks that entities, blocks, fluids, etc are ticked, meaning that things like farms outside of this distance may not work properly. You can set this to 5 for better performance, but it could affect mob spawning or farms. _This only affects singleplayer - you won't notice anything while playing on servers as they have their own setting for simulation distance._
 
-I recommend keeping V-Sync turned off unless you notice screen tearing, which in that case, turn it on or use Adaptive V-Sync. To use Adaptive V-Sync, you will need to install the [Sodium Extra](https://modrinth.com/project/sodium-extra) mod. If you are using Additive, this mod is already included. Adaptive V-Sync typically has less input latency than normal V-Sync.
+I recommend keeping V-Sync turned off unless you notice screen tearing, which in that case, turn it on or use Adaptive V-Sync. Adaptive V-Sync typically has less input latency than normal V-Sync.
 
 #### Quality
 
@@ -96,4 +96,4 @@ Set particles to "minimal"/"decreased" on low-end systems, and "all" on other sy
 
 ### MacOS half resolution
 
-If you're on a Mac with a Retina display, it is heavily recommended to install [Sodium Extra](https://modrinth.com/mod/sodium-extra) and enable the "half resolution" option under the "Extra" tab. You will have to restart the game after enabling this. Retina displays have very high native resolutions, so running Minecraft at half resolution won't affect quality noticeably while resulting in a large boost in performance and battery life. If you're using Additive, Sodium Extra is already installed.
+If you're on a Mac with a Retina display, it is heavily recommended to enable the "half resolution" option under the "Extra" tab. You will have to restart the game after enabling this. Retina displays have very high native resolutions, so running Minecraft at half resolution won't affect quality noticeably while resulting in a large boost in performance and battery life.

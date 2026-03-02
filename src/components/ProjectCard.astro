@@ -1,0 +1,21 @@
+---
+interface Props {
+	href: string;
+	logo: string;
+	alt: string;
+	background: string;
+	logoHeight?: string;
+}
+
+const { href, logo, alt, background, logoHeight = "h-8" } = Astro.props;
+---
+
+<a class="focus:scale-105 hover:scale-105" href={href}>
+	<article
+		class="p-4 sm:p-6 h-full flex flex-col items-center justify-center text-center gap-2 text-skywardmc-black bg-center bg-cover rounded-xs"
+		style={`background-image: url(${background})`}
+	>
+		<img alt={alt} src={logo} class={logoHeight} />
+		<p class="font-medium"><slot /></p>
+	</article>
+</a>

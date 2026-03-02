@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Button from "../components/Button.astro";
-import IconLink from "../components/IconLink.astro";
+import ProjectHero from "../components/ProjectHero.astro";
 ---
 
 <Layout
@@ -9,51 +8,43 @@ import IconLink from "../components/IconLink.astro";
 	description="Adrenaline is a lightweight Minecraft modpack that heavily improves FPS and logic performance through various optimization mods."
 	style="adrenaline"
 >
-	<section
-		class="p-4 mb-4 sm:p-6 sm:mb-6 flex flex-col items-center text-center gap-4 sm:gap-6 text-skywardmc-black bg-[url(/branding/adrenaline/background.svg)] bg-center bg-cover rounded-xs"
+	<ProjectHero
+		logo="/branding/adrenaline/text-logo.svg"
+		alt="Adrenaline"
+		logoHeight="h-24"
+		background="/branding/adrenaline/background.svg"
+		mainLinks={[
+			{
+				href: "/adrenaline/installation",
+				icon: "lucide:download",
+				label: "Install",
+			},
+			{
+				href: "/adrenaline/installation",
+				icon: "lucide:book",
+				label: "Wiki",
+			},
+			{
+				href: "https://github.com/skywardmc/adrenaline/issues",
+				icon: "lucide:circle-dot",
+				label: "Issues",
+			},
+		]}
+		socialLinks={[
+			{
+				href: "https://modrinth.com/project/adrenaline",
+				icon: "simple-icons:modrinth",
+				label: "Modrinth",
+			},
+			{
+				href: "https://github.com/skywardmc/adrenaline",
+				icon: "simple-icons:github",
+				label: "GitHub",
+			},
+		]}
 	>
-		<img
-			alt="Adrenaline"
-			src="/branding/adrenaline/text-logo.svg"
-			class="h-24"
-		/>
-		<p class="font-medium">
-			A lightweight, open-source performance modpack for Minecraft
-		</p>
-		<div class="flex items-center justify-center flex-wrap gap-2">
-			<Button
-				href="/adrenaline/installation"
-				icon="lucide:download"
-				mode="light"
-			>
-				Install
-			</Button>
-			<Button href="/adrenaline/installation" icon="lucide:book" mode="light">
-				Wiki
-			</Button>
-			<Button
-				href="https://github.com/skywardmc/adrenaline/issues"
-				icon="lucide:circle-dot"
-				mode="light"
-			>
-				Issues
-			</Button>
-		</div>
-		<div class="flex items-center justify-center flex-wrap gap-6 font-medium">
-			<IconLink
-				href="https://modrinth.com/project/adrenaline"
-				icon="simple-icons:modrinth"
-			>
-				Modrinth
-			</IconLink>
-			<IconLink
-				href="https://github.com/skywardmc/adrenaline"
-				icon="simple-icons:github"
-			>
-				GitHub
-			</IconLink>
-		</div>
-	</section>
+		A lightweight, open-source performance modpack for Minecraft
+	</ProjectHero>
 
 	<section class="prose dark:prose-invert max-w-full">
 		<p>

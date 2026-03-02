@@ -1,0 +1,56 @@
+---
+import IconLink from "./IconLink.astro";
+
+interface Link {
+	href: string;
+	icon: string;
+	label: string;
+}
+interface Props {
+	logo: string;
+	alt: string;
+	background: string;
+	logoHeight?: string;
+	mainLinks?: Link[];
+	socialLinks?: Link[];
+}
+
+const {
+	logo,
+	alt,
+	background,
+	logoHeight = "h-24",
+	mainLinks = [],
+	socialLinks = [],
+} = Astro.props;
+---
+
+<section
+	class="p-4 mb-4 sm:p-6 sm:mb-6 flex flex-col items-center text-center gap-4 sm:gap-6 text-skywardmc-black bg-center bg-cover rounded-xs"
+	style={`background-image: url(${background})`}
+>
+	<img alt={alt} src={logo} class={logoHeight} />
+	<p class="font-medium"><slot /></p>
+	<div class="flex items-center justify-center flex-wrap gap-2">
+		{
+			mainLinks.map((link) => (
+				<IconLink
+					href={link.href}
+					icon={link.icon}
+					class="px-3 py-1 bg-skywardmc-white border-skywardmc-offgray rounded-xs shadow-xs"
+				>
+					{link.label}
+				</IconLink>
+			))
+		}
+	</div>
+	<div class="flex items-center justify-center flex-wrap gap-6 font-medium">
+		{
+			socialLinks.map((link) => (
+				<IconLink href={link.href} icon={link.icon}>
+					{link.label}
+				</IconLink>
+			))
+		}
+	</div>
+</section>

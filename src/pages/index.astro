@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import IconLink from "../components/IconLink.astro";
+import ProjectCard from "../components/ProjectCard.astro";
 ---
 
 <Layout
@@ -30,42 +31,38 @@ import IconLink from "../components/IconLink.astro";
 		</div>
 	</section>
 	<section class="not-prose mb-4 grid grid-col md:grid-cols-2 gap-4 sm:gap-6">
-		<a class="focus:scale-105 hover:scale-105" href="/adrenaline">
-			<article
-				class="p-4 sm:p-6 h-full flex flex-col items-center justify-center text-center gap-2 text-skywardmc-black bg-[url(/branding/adrenaline/background.svg)] bg-center bg-cover rounded-xs"
-			>
-				<img alt="Adrenaline" src="/branding/adrenaline/text.svg" class="h-8" />
-				<p class="font-medium">
-					A lightweight, open-source performance modpack
-				</p>
-			</article>
-		</a>
-		<a class="focus:scale-105 hover:scale-105" href="/additive">
-			<article
-				class="p-4 sm:p-6 h-full flex flex-col items-center justify-center text-center gap-2 text-skywardmc-black bg-[url(/branding/additive/background.svg)] bg-center bg-cover rounded-xs"
-			>
-				<img alt="Additive" src="/branding/additive/text.svg" class="h-8" />
-				<p class="font-medium">
-					A simple, modern, open-source alternative to OptiFine
-				</p>
-			</article>
-		</a>
-		<a class="focus:scale-105 hover:scale-105" href="/hammer">
-			<article
-				class="p-4 sm:p-6 h-full flex flex-col items-center justify-center text-center gap-2 text-skywardmc-black bg-[url(/branding/hammer/background.svg)] bg-center bg-cover rounded-xs"
-			>
-				<img alt="Hammer" src="/branding/hammer/text.svg" class="h-8" />
-				<p class="font-medium">Port of Adrenaline to (Neo)Forge</p>
-			</article>
-		</a>
-		<a class="focus:scale-105 hover:scale-105" href="/drill">
-			<article
-				class="p-4 sm:p-6 h-full flex flex-col items-center justify-center text-center gap-2 text-skywardmc-black bg-[url(/branding/drill/background.svg)] bg-center bg-cover rounded-xs"
-			>
-				<img alt="Drill" src="/branding/drill/text.svg" class="h-8" />
-				<p class="font-medium">Port of Additive to (Neo)Forge</p>
-			</article>
-		</a>
+		<ProjectCard
+			href="/adrenaline"
+			alt="Adrenaline"
+			logo="/branding/adrenaline/text.svg"
+			background="/branding/adrenaline/background.svg"
+		>
+			A lightweight, open-source performance modpack
+		</ProjectCard>
+		<ProjectCard
+			href="/additive"
+			alt="Additive"
+			logo="/branding/additive/text.svg"
+			background="/branding/additive/background.svg"
+		>
+			A simple, modern, open-source alternative to OptiFine
+		</ProjectCard>
+		<ProjectCard
+			href="/hammer"
+			alt="Hammer"
+			logo="/branding/hammer/text.svg"
+			background="/branding/hammer/background.svg"
+		>
+			Port of Adrenaline to (Neo)Forge
+		</ProjectCard>
+		<ProjectCard
+			href="/drill"
+			alt="Drill"
+			logo="/branding/drill/text.svg"
+			background="/branding/drill/background.svg"
+		>
+			Port of Additive to (Neo)Forge
+		</ProjectCard>
 	</section>
 	<div class="prose dark:prose-invert max-w-full">
 		<p>
