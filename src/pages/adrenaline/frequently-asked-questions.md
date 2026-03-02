@@ -17,6 +17,24 @@ If you want to talk about the pack or have any questions, please use the [Discor
 
 I am currently looking for viable alternatives to Discord at the moment, but right now our official support channel is on Discord.
 
+## Aren't YOSBR and Crash Assistant QoL mods?
+
+_Technically_, yes. However, both don't affect the game during runtime in any way. They only do things before the game is run, or if you experience a crash.
+
+YOSBR simply allows us to set custom defaults for config files, which prevents your configs from being overwritten with our defaults every time you update the modpack.
+
+Crash Assistant helps you analyze crash logs, and also makes it easier for users to access our server for support. It also contains features such as detecting and warning you if Minecraft is using an iGPU while a dGPU is available.
+
+## What's the difference from Fabulously Optimized?
+
+Adrenaline aims to not add any extra features, while also changing very little of Vanilla's default settings. It only improves performance.
+
+Adrenaline is more focused on user-customization and having a lighter experience out of the box. Adrenaline may be more suitable for low-end devices.
+
+Adrenaline also actively supports more versions at once, including popular modding versions, which can make it more suitable as a base to use for modpacks.
+
+Our alternative to Fabulously Optimized is [Additive](/additive). You can see a comparison in [Additive/Frequently asked questions](/additive/frequently-asked-questions)
+
 ## Can I make a modpack with this?
 
 Yes, _you can_! Feel free to use this in any way you want! All I ask for is credit somewhere. You don't **have** to give credit - after all it's just a Minecraft modpack, but I spend lots of time maintaining this and it would help a ton. If you do want to give credit, just put the Modrinth page in there. Also, I would prefer you not to include this project's name (for example, something like "Adrenaline Plus") or a similar icon (like changing colors of the current icon) in the fork as it could confuse users and can make it seem like I endorse it.
