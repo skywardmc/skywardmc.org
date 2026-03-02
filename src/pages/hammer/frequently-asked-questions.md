@@ -23,4 +23,4 @@ Yes, _you can_! Feel free to use this in any way you want! All I ask for is cred
 
 **If you're building a modpack off Hammer and publishing it, please be sure to change the config on Crash Assistant to match your project, such as the Discord links and strings, along with the modpack creators list. Or just remove Crash Assistant entirely if you don't want to deal with updating the modlist every time you make a change.**
 
-If you do make a fork, feel free to let me know and I can add it to the [Credits](/Hammer/credits) page 😎
+If you do make a fork, feel free to let me know and I can add it to the [Credits](/hammer/credits) page 😎
