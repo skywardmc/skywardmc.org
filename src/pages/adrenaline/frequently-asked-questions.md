@@ -33,7 +33,7 @@ Adrenaline is more focused on user-customization and having a lighter experience
 
 Adrenaline also actively supports more versions at once, including popular modding versions, which can make it more suitable as a base to use for modpacks.
 
-Our alternative to Fabulously Optimized is [Additive](/additive). You can see a comparison in [Additive/Frequently asked questions](/additive/frequently-asked-questions)
+Our alternative to Fabulously Optimized is [Additive](/additive). You can see a comparison in [Additive/Frequently asked questions](/additive/frequently-asked-questions).
 
 ## Can I make a modpack with this?
 
