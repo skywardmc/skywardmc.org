@@ -90,7 +90,7 @@ Set particles to "minimal"/"decreased" on low-end systems, and "all" on other sy
 
 ### MacOS half resolution
 
-If you're on a Mac with a Retina display, it is heavily recommended to install [Sodium Extra](https://modrinth.com/mod/sodium-extra) (respectively [Embeddium (Rubidium) Extra](https://modrinth.com/mod/rubidium-extra) for 1.20.1) and enable the "half resolution" option under the "Extra" tab. You will have to restart the game after enabling this. Retina displays have very high native resolutions, so running Minecraft at half resolution won't affect quality noticeably while resulting in a large boost in performance and battery life. If you're using Additive or Drill, Sodium Extra  is already installed.
+If you're on a Mac with a Retina display, it is heavily recommended to install [Sodium Extra](https://modrinth.com/mod/sodium-extra) (respectively [Embeddium (Rubidium) Extra](https://modrinth.com/mod/rubidium-extra) for 1.20.1) and enable the "half resolution" option under the "Extra" tab. You will have to restart the game after enabling this. Retina displays have very high native resolutions, so running Minecraft at half resolution won't affect quality noticeably while resulting in a large boost in performance and battery life. If you're using Additive or Drill, Sodium Extra is already installed.
 
 ## Improve your experience
 
