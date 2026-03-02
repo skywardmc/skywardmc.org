@@ -1,40 +1,116 @@
 ---
 import IconLink from "./IconLink.astro";
+import { Picture } from "astro:assets";
+import AdditiveInstallerAdditive from "../assets/images/additive-installer_additive.png";
+import PrismLauncher from "../assets/images/prismlauncher.png";
 
 const version = "1.0.5";
 const commitHash = "bf002f0dc00b244995b3816f49acd3182854f1ca";
 ---
 
-<article
-	class="not-prose py-4 px-6 flex flex-col gap-4 max-w-96 w-fit rounded-xs shadow-xs text-skywardmc-offgray dark:text-skywardmc-offwhite border border-skywardmc-offgray/20 dark:border-skywardmc-offwhite/20 dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray"
->
-	<div class="flex items-center gap-4">
-		<IconLink
-			href={`https://github.com/skywardmc/additive-installer/releases/download/v${version}/additive-installer-${version}.jar`}
-			icon="lucide:download"
-			class="p-2 text-2xl bg-skywardmc-offwhite dark:bg-skywardmc-offgray rounded-xs"
-		/>
-		<div class="flex flex-col">
-			<h1 class="font-medium">Additive Installer</h1>
-			<p
-				class="text-xs font-mono text-skywardmc-offgray/60 dark:text-skywardmc-offwhite/60"
-			>
-				<a
-					href={`https://github.com/skywardmc/additive-installer/releases/v${version}`}
-					class="hover:underline">v{version}</a
-				>
-				•
-				<a
-					href={`https://github.com/skywardmc/additive-installer/commit/${commitHash}`}
-					class="hover:underline">{commitHash.slice(0, 7)}</a
-				>
+<div class="mb-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+	<article
+		class="not-prose flex flex-col gap-6 text-skywardmc-offgray dark:text-skywardmc-offwhite dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray"
+	>
+		<p
+			class="text-xs flex items-center gap-2 text-skywardmc-offgray/80 dark:text-skywardmc-offwhite/80"
+		>
+			<img src="/icons/minecraft.png" class="size-5 rounded-xs" /> Minecraft Launcher
+		</p>
+		<p class="text-sm">
+			To install Adrenaline or Additive on the Minecraft launcher, you can use
+			the Additive installer.
+		</p>
+		<article
+			class="not-prose py-4 px-6 flex flex-col gap-4 text-skywardmc-offgray dark:text-skywardmc-offwhite border border-skywardmc-offgray/20 dark:border-skywardmc-offwhite/20 dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray rounded-xs shadow-xs"
+		>
+			<div class="flex items-center gap-4">
+				<IconLink
+					href={`https://github.com/skywardmc/additive-installer/releases/download/v${version}/additive-installer-${version}.jar`}
+					icon="lucide:download"
+					class="p-2 text-2xl bg-skywardmc-black text-skywardmc-white dark:bg-skywardmc-white dark:text-skywardmc-black rounded-xs hover:scale-110"
+				/>
+				<div class="flex flex-col">
+					<h1 class="font-medium">Additive Installer</h1>
+					<p
+						class="text-xs font-mono text-skywardmc-offgray/80 dark:text-skywardmc-offwhite/80"
+					>
+						<a
+							href={`https://github.com/skywardmc/additive-installer/releases/v${version}`}
+							class="hover:underline">v{version}</a
+						>
+						•
+						<a
+							href={`https://github.com/skywardmc/additive-installer/commit/${commitHash}`}
+							class="hover:underline">{commitHash.slice(0, 7)}</a
+						>
+					</p>
+				</div>
+			</div>
+			<p class="text-xs">
+				If you can't open the installer, try running <code
+					class="font-mono text-skywardmc-offgray/80 dark:text-skywardmc-offwhite/80"
+					>java -jar additive-installer-{version}.jar</code
+				> in a terminal. You need Java installed.
 			</p>
-		</div>
-	</div>
-	<p class="text-xs">
-		If you can't open the installer, try running <code
-			class="font-mono text-skywardmc-offgray/60 dark:text-skywardmc-offwhite/60"
-			>java -jar additive-installer-{version}.jar</code
-		> in a terminal.
-	</p>
-</article>
+		</article>
+		<Picture
+			alt="Screenshot of the Additive installer"
+			src={AdditiveInstallerAdditive}
+			formats={["avif", "webp"]}
+			width={486}
+			densities={[1, 2]}
+			class="mx-auto shadow-sm rounded-md"
+		/>
+	</article>
+
+	<article
+		class="not-prose flex flex-col gap-6 text-skywardmc-offgray dark:text-skywardmc-offwhite dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray"
+	>
+		<p
+			class="text-xs flex items-center gap-2 text-skywardmc-offgray/80 dark:text-skywardmc-offwhite/80"
+		>
+			<img src="/icons/prismlauncher.svg" class="size-5 rounded-xs" />
+			<img
+				src="/icons/modrinth.svg"
+				class="size-5 rounded-xs text-[#4ead65] dark:text-[#66d676]"
+			/>
+			<img src="/icons/atlauncher.svg" class="size-5 rounded-xs" />
+			Prism Launcher, Modrinth App, etc
+		</p>
+		<p class="text-sm">
+			To install Adrenaline or Additive on other launchers, read Modrinth's
+			documentation.
+		</p>
+		<article
+			class="not-prose py-4 px-6 flex flex-col gap-4 text-skywardmc-offgray dark:text-skywardmc-offwhite border border-skywardmc-offgray/20 dark:border-skywardmc-offwhite/20 dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray rounded-xs shadow-xs"
+		>
+			<div class="flex items-center gap-4">
+				<IconLink
+					href="https://support.modrinth.com/en/articles/8802250-modpacks-on-modrinth"
+					icon="lucide:square-arrow-out-up-right"
+					class="p-2 text-2xl bg-[#4ead65] dark:bg-[#66d676] text-skywardmc-white rounded-xs hover:scale-110"
+				/>
+				<div class="flex flex-col">
+					<h1 class="font-medium">Modpacks on Modrinth</h1>
+					<p
+						class="text-xs font-mono text-skywardmc-offgray/80 dark:text-skywardmc-offwhite/80"
+					>
+						Modrinth Documentation
+					</p>
+				</div>
+			</div>
+			<p class="text-xs">
+				This is the recommended installation method if you plan on managing
+				extra mods alongside Adrenaline or Additive.
+			</p>
+		</article>
+		<Picture
+			alt="Screenshot of Prism Launcher"
+			src={PrismLauncher}
+			formats={["avif", "webp"]}
+			width={486}
+			class="mx-auto shadow-sm rounded-md"
+		/>
+	</article>
+</div>
