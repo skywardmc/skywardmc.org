@@ -1,31 +1,76 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ProjectHero from "../components/ProjectHero.astro";
 ---
 
 <Layout
 	title="Hammer"
-	description="Hammer is a lightweight Minecraft modpack for (Neo)Forge that heavily improves FPS and logic performance through various optimization mods."
+	description="Hammer is a lightweight Minecraft modpack for NeoForge that heavily improves FPS and logic performance through various optimization mods."
 	style="hammer"
 >
-	<img
-		alt="Hammer logo"
-		src="https://raw.githubusercontent.com/skywardmc/art/refs/heads/main/hammer/logo_vector.svg"
-		class="not-prose ms-4 float-end size-24 sm:size-32 rounded-sm"
-	/>
-	<div class="prose prose-skywardmc dark:prose-invert max-w-full">
+	<ProjectHero
+		logo="/branding/hammer/text-logo.svg"
+		alt="Hammer"
+		logoHeight="h-24"
+		background="/branding/hammer/background.svg"
+		mainLinks={[
+			{
+				href: "/hammer/installation",
+				icon: "lucide:download",
+				label: "Install",
+			},
+			{
+				href: "/hammer/installation",
+				icon: "lucide:book",
+				label: "Wiki",
+			},
+			{
+				href: "https://github.com/skywardmc/hammer/issues",
+				icon: "lucide:circle-dot",
+				label: "Issues",
+			},
+		]}
+		socialLinks={[
+			{
+				href: "https://modrinth.com/project/hammer",
+				icon: "simple-icons:modrinth",
+				label: "Modrinth",
+			},
+			{
+				href: "https://github.com/skywardmc/hammer",
+				icon: "simple-icons:github",
+				label: "GitHub",
+			},
+		]}
+	>
+		A lightweight, open-source performance modpack for NeoForge
+	</ProjectHero>
+
+	<section class="prose prose-skywardmc dark:prose-invert max-w-full">
 		<p>
-			Hammer is a lightweight, open-source modpack for (Neo)Forge that
-			significantly improves Minecraft render and logic performance through
-			various different mods and configurations.
+			Hammer is a modpack, developed for NeoForge, comprised of the best
+			combination of mods (e.g. Sodium and Lithium, along with many more) that
+			significantly improves rendering performance, logic performance, memory
+			usage, and more - all without compromising on the game's vanilla looks and
+			features!
 		</p>
 		<p>
-			This project is a port of <a href="/adrenaline">Adrenaline</a> to (Neo)Forge.
+			This project is a port of <a href="/adrenaline">Adrenaline</a> to NeoForge.
 			It uses <a href="https://sinytra.org/">Sinytra</a> along with native Forge ports.
+			If you don't need any mods from NeoForge, we recommend that you use Adrenaline
+			instead, as it has more features and better performance. This project is primarily
+			focused for modpack creators.
 		</p>
 		<p>
-			Hammer's wiki is currently a work-in-progress. For more information, read
-			through Hammer's <a href="https://modrinth.com/project/hammer">Modrinth</a
+			For the list of mods that are included, see this <a
+				href="/hammer/performance-features">wiki page</a
+			>. Hammer can be installed on both clients and servers, so this list tells
+			you what is installed depending on the environment.
+		</p>
+		<p>
+			For more information, read through Hammer's <a
+				href="https://modrinth.com/project/hammer">Modrinth</a
 			> page.
 		</p>
-	</div>
+	</section>
 </Layout>

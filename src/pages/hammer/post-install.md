@@ -5,7 +5,7 @@ description: "Post install instructions for Hammer."
 style: "hammer"
 ---
 
-Out of the box, Hammer should be good enough for most people. However, this page contains a few things you can do after installing Hammer to possibly get better performance, stability, etc.
+Out of the box, Hammer should be good enough for most people. However, this page contains a few things you can do after installing Hammer to possibly get better performance, etc.
 
 ## Improve performance
 
@@ -80,7 +80,7 @@ Start by changing your render distance. The higher this number, the further you 
 
 After this, you can change your simulation distance. This is the distance in chunks that entities, blocks, fluids, etc are ticked, meaning that things like farms outside of this distance may not work properly. You can set this to 5 for better performance, but it could affect mob spawning or farms. _This only affects singleplayer - you won't notice anything while playing on servers as they have their own setting for simulation distance._
 
-I recommend keeping V-Sync turned off unless you notice screen tearing, which in that case, turn it on or use Adaptive V-Sync. To use Adaptive V-Sync, you will need to install the [Sodium Extra](https://modrinth.com/project/sodium-extra) mod (respectively [Embeddium (Rubidium) Extra](https://modrinth.com/mod/rubidium-extra) mod for 1.20.1). If you are using Additive or Drill, this mod is already included. Adaptive V-Sync typically has less input latency than normal V-Sync.
+I recommend keeping V-Sync turned off unless you notice screen tearing, which in that case, turn it on or use Adaptive V-Sync. To use Adaptive V-Sync, you will need to install the [Sodium Extra](https://modrinth.com/project/sodium-extra) mod (respectively [Embeddium (Rubidium) Extra](https://modrinth.com/mod/rubidium-extra) mod for 1.20.1). Adaptive V-Sync typically has less input latency than normal V-Sync.
 
 #### Quality
 
@@ -90,7 +90,7 @@ Set particles to "minimal"/"decreased" on low-end systems, and "all" on other sy
 
 ### MacOS half resolution
 
-If you're on a Mac with a Retina display, it is heavily recommended to install [Sodium Extra](https://modrinth.com/mod/sodium-extra) (respectively [Embeddium (Rubidium) Extra](https://modrinth.com/mod/rubidium-extra) for 1.20.1) and enable the "half resolution" option under the "Extra" tab. You will have to restart the game after enabling this. Retina displays have very high native resolutions, so running Minecraft at half resolution won't affect quality noticeably while resulting in a large boost in performance and battery life. If you're using Additive or Drill, Sodium Extra is already installed.
+If you're on a Mac with a Retina display, it is heavily recommended to install [Sodium Extra](https://modrinth.com/mod/sodium-extra) (respectively [Embeddium (Rubidium) Extra](https://modrinth.com/mod/rubidium-extra) for 1.20.1) and enable the "half resolution" option under the "Extra" tab. You will have to restart the game after enabling this. Retina displays have very high native resolutions, so running Minecraft at half resolution won't affect quality noticeably while resulting in a large boost in performance and battery life.
 
 ## Improve your experience
 
@@ -98,19 +98,19 @@ Hammer is shipped extremely bare-bones and is designed to be flexible so that th
 
 ### Sodium add-ons
 
-One mod I recommend installing is [Sodium Extra](https://modrinth.com/mod/sodium-extra) (respectively [Embeddium (Rubidium) Extra](https://modrinth.com/mod/rubidium-extra) for 1.20.1). This mod lets you configure extra graphics options and add an FPS counter in the corner of your screen. If you are using Additive, this is already included by default.
+One mod I recommend installing is [Sodium Extra](https://modrinth.com/mod/sodium-extra) (respectively [Embeddium (Rubidium) Extra](https://modrinth.com/mod/rubidium-extra) for 1.20.1). This mod lets you configure extra graphics options and add an FPS counter in the corner of your screen.
 
 On Minecraft versions older than mc1.21.11 you may also want to install [Reese's Sodium Options](https://modrinth.com/mod/reeses-sodium-options) (respectively, in 1.20.1 it is already integrated with Embeddium.). This improves the layout of the Sodium menu. This is not needed on mc1.21.11 or later as Sodium has redesigned their menu.
 
 ### Shader support
 
-To get support for shaderpacks, install the [Iris Shaders](https://modrinth.com/mod/iris) mod (respectively [Oculus](https://modrinth.com/mod/oculus) mod for 1.20.1) and then check it out in the `Video Settings` menu. If you are using Additive, this is already included by default.
+To get support for shaderpacks, install the [Iris Shaders](https://modrinth.com/mod/iris) mod (respectively [Oculus](https://modrinth.com/mod/oculus) mod for 1.20.1) and then check it out in the `Video Settings` menu.
 
 Iris/Oculus does not come with built-in shaders. You can get shaders from [Modrinth](https://modrinth.com/discover/shaders), and then drop them in the `shaderpacks` folder.
 
 ### Controller support
 
-To get controller support on Minecraft Java Edition, you can install [Controlify](https://modrinth.com/mod/controlify). This is especially handy if you are on a Steam Deck. If you are using Additive, this is already included by default.
+To get controller support on Minecraft Java Edition, you can install [Controlify](https://modrinth.com/mod/controlify). This is especially handy if you are on a Steam Deck.
 
 ### Immersive VR support
 
