@@ -13,10 +13,6 @@ There are some ways to improve your performance past installation. Some of them 
 
 ### Extra mods to consider
 
-#### [Ixeris](https://modrinth.com/mod/ixeris)
-
-Implements buffered raw input and threaded event polling. Recommended if you use a mouse with a very high polling rate. Not included by default right now as I'm waiting for buffered raw input to be considered stable, but it will be added [once that time comes](https://github.com/skywardmc/adrenaline/issues/61).
-
 #### [Concurrent Chunk Management Engine (NeoForge)](https://modrinth.com/mod/c2me-neoforge)
 
 Improves chunk performance using multi-threading. It's not included because it can reduce rendering performance while also not really granting a benefit in singleplayer. You should only need to install it on the client if:
@@ -76,17 +72,23 @@ By default, Hammer does **not** change any of Minecraft's quality/graphics setti
 
 #### General
 
-Start by changing your render distance. The higher this number, the further you can see. If you are playing on multiplayer, servers usually have a cap for render distance. On low-end systems, this should be set to 4-8 chunks. Mid-range systems will usually work well with 8-16 chunks, and high-end systems should be fine with 12-24 chunks.
+Start by changing your render distance. The higher this number, the further you can see. If you are playing on multiplayer, servers usually have a cap for render distance. On low-end systems, this should be set to 4-8 chunks. Mid-range systems will usually work well with 8-16 chunks, and high-end systems should be fine with 12-32 chunks.
 
 After this, you can change your simulation distance. This is the distance in chunks that entities, blocks, fluids, etc are ticked, meaning that things like farms outside of this distance may not work properly. You can set this to 5 for better performance, but it could affect mob spawning or farms. _This only affects singleplayer - you won't notice anything while playing on servers as they have their own setting for simulation distance._
 
-I recommend keeping V-Sync turned off unless you notice screen tearing, which in that case, turn it on or use Adaptive V-Sync. To use Adaptive V-Sync, you will need to install the [Sodium Extra](https://modrinth.com/project/sodium-extra) mod (respectively [Embeddium (Rubidium) Extra](https://modrinth.com/mod/rubidium-extra) mod for 1.20.1). Adaptive V-Sync typically has less input latency than normal V-Sync.
+I recommend keeping V-Sync turned off unless you notice screen tearing, which in that case, turn it on or alternatively use Adaptive V-Sync. To use Adaptive V-Sync, you will need to install the [Sodium Extra](https://modrinth.com/project/sodium-extra) mod (respectively [Embeddium (Rubidium) Extra](https://modrinth.com/mod/rubidium-extra) mod for 1.20.1). Adaptive V-Sync typically has less input latency than normal V-Sync.
 
 #### Quality
 
-Set graphics quality to "fast" on low-end systems and "fancy" on mid-range to high-end systems. This will affect if leaves are transparent or not, weather particles, and other things. **Do not use Fabulous unless you absolutely need it's benefits, as it can have a noticeably negative impact on performance.**
+**On mc1.21.11 or later, it is heavily recommended that you do not turn on "Improved Transparency" unless you absolutely need it's benefits, as it can impact performance significantly. Otherwise if you are below mc1.21.11, it is not recommended that you set the graphics preset to "Fabulous" for the same reason.**
 
-Set particles to "minimal"/"decreased" on low-end systems, and "all" on other systems. For greater control over particles, install Sodium Extra.
+If there are a lot of entities being rendered at once, it may help to reduce "Entity Distance". This is the distance at which entities are rendered.
+
+You may want to try lowering "Mipmap Levels". However, this only mainly affects performance when using a resourcepack that has many animated textures.
+
+Setting particles to a lower quality setting may also help with performance at certain points.
+
+You can hover over any other setting to see a description of what it does and it's impact.
 
 ### MacOS half resolution
 
