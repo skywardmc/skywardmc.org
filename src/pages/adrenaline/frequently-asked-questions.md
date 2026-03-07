@@ -17,13 +17,17 @@ If you want to talk about the pack or have any questions, please use the [Discor
 
 I am currently looking for viable alternatives to Discord at the moment, but right now our official support channel is on Discord.
 
-## Aren't YOSBR and Crash Assistant QoL mods?
+## Aren't Config Manager and Crash Assistant QoL mods?
 
-_Technically_, yes. However, both don't affect the game during runtime in any way. They only do things before the game is run, or if you experience a crash.
+_Technically_, yes. However, both barely affect the game during runtime. They pretty much only do things before the game is run, or if you experience a crash.
 
-YOSBR simply allows us to set custom defaults for config files, which prevents your configs from being overwritten with our defaults every time you update the modpack.
+Config Manager simply allows us to set custom defaults for config files, which prevents your configs from being overwritten with our defaults every time you update the modpack. It also lets you easily reset or overwrite your configurations with the modpack defaults in it's own config menu.
 
-Crash Assistant helps you analyze crash logs, and also makes it easier for users to access our server for support. It also contains features such as detecting and warning you if Minecraft is using an iGPU while a dGPU is available.
+Crash Assistant helps you analyze crash logs, and also makes it easier for users to access our server for support. It also contains features such as detecting and warning you if Minecraft is using an iGPU while a dGPU is available. It's tremendously increased the amount of support posts we receive, often improving the modpack for everyone, so that's why we have it built-in.
+
+### What about Mod Menu?
+
+For information about why Mod Menu is included in Adrenaline, see [this comment](https://github.com/skywardmc/adrenaline/issues/71#issuecomment-4015528054).
 
 ## What's the difference from Fabulously Optimized?
 
