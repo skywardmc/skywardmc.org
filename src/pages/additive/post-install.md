@@ -7,19 +7,17 @@ style: "additive"
 
 Out of the box, Additive should be good enough for most people. However, this page contains a few things you can do after installing Additive to possibly get better performance, etc.
 
-## Improve performance
+## Extra performance mods
 
-There are some ways to improve your performance past installation. Some of them are experimental and should only be used if you really want to.
+There are some performance mods that Additive does not come with that you may want to take a look at after installation. Typically these mods are not included because they are either too experimental, cause issues regarding mod compatibility, or break/modify Vanilla features.
 
-### Extra mods to consider
-
-#### Nvidium (fork)
+### [Nvidium](https://modrinth.com/mod/nvidium)
 
 Uses cutting edge NVIDIA features to render huge amounts of terrain geometry at much more playable framerates. Currently upstream is unmaintained and incompatible with current Sodium and Minecraft versions, so it cannot be installed with Additive as of right now.
 
-However, if you are feeling adventurous, there is a fork of Nvidium maintained by drouarb that works on the latest versions. You can find builds [here](https://github.com/drouarb/nvidium/releases), but **please keep in mind that it is in beta and you should use it at your own risk**.
+However, if you are feeling adventurous, there is a [fork of Nvidium maintained by drouarb](https://github.com/drouarb/nvidium) that works on the latest versions. You can find builds [here](https://github.com/drouarb/nvidium/releases), but **please keep in mind that it is in beta and you should use it at your own risk**.
 
-#### [Concurrent Chunk Management Engine](https://modrinth.com/mod/c2me-fabric)
+### [C2ME](https://modrinth.com/mod/c2me-fabric)
 
 Improves chunk performance using multi-threading. It's included in Additive when installed on servers, but not on the client. The reasoning for that is because it can reduce rendering performance while also not really granting a benefit in singleplayer. You should only need to install it on the client if:
 
@@ -27,24 +25,38 @@ Improves chunk performance using multi-threading. It's included in Additive when
 - You are using mods such as Chunky and want faster generation
 - You are using complex worldgen mods such as Terralith
 
-C2ME only has an impact when used on a dedicated server or in singleplayer (integrated server). It does not do anything when the client is connected to a server.
+_Note: C2ME does not do anything on the client when connected to multiplayer._
 
-#### [Immersive Optimization](https://modrinth.com/mod/immersive-optimization)
+### [Immersive Optimization](https://modrinth.com/mod/immersive-optimization)
 
-Entity tick scheduler that improves logic performance without affecting Vanilla functionality. Not included in Additive by default as it may have some rough edges. [May be implemented in the future](https://github.com/skywardmc/adrenaline/issues/53).
+Entity tick scheduler that can heavily improve logic performance without affecting Vanilla functionality.
 
-#### [Moonrise](https://modrinth.com/mod/moonrise-opt)
+This mod is not included in Additive out of the box as it has [a couple issues regarding mod incompatibilities and breaking Vanilla features](https://github.com/Luke100000/ImmersiveOptimization/issues).
 
-An official port of several Paper patches to Fabric, improves logic performance. Not included in Additive as it is incompatible with a very large amount of mods. Supersedes a few mods including ScalableLux and C2ME. If you add this, you will have to remove ScalableLux and C2ME, and possibly other mods. See their Modrinth page for more information.
+### [Moonrise](https://modrinth.com/mod/moonrise-opt)
 
-#### [ThreadTweak](https://modrinth.com/mod/threadtweak)
+An official port of several Paper patches to Fabric, improves logic performance. Supersedes a few mods including ScalableLux and C2ME. If you add this, you will have to remove ScalableLux and C2ME, and possibly other mods.
+
+This mod is not included in Additive out of the box as it is [incompatible with a wide variety of mods](https://github.com/Tuinity/Moonrise/issues).
+
+### [TT20](https://modrinth.com/mod/tt20)
+
+**Only recommended for servers!** This can cause issues in singleplayer.
+
+Minecraft Java typically runs at 20 TPS. If your server is lagging, a lower TPS than 20 will cause the game to slow down. Things like eating food or breaking blocks will have delays and it generally can become unplayable.
+
+TT20 is a mod that recalculates the amount of ticks that something takes, based on the TPS. So, if your server is running at 10 TPS, things will happen twice as fast, which will make lag far less visible to the player.
+
+This mod is not included in Additive out of the box as it has [a couple issues regarding breaking Vanilla features](https://github.com/snackbag/tt20/issues).
+
+### [ThreadTweak](https://modrinth.com/mod/threadtweak)
 
 You may want to install ThreadTweak if you notice stutters when generating chunks. Otherwise, ThreadTweak is very likely not needed and could actually reduce performance in a couple scenarios.
 
 - Used to be shipped out of the box with Additive, but [after some reasoning](https://github.com/skywardmc/adrenaline/issues/66), we have gotten rid of it.
 - If you do not want to use ThreadTweak, there are other mods that do the same thing, such as [StutterFix](https://modrinth.com/mod/stutterfix), or using the `mixin.perf.thread_priorities` mixin in ModernFix.
 
-### Setting your allocated memory
+## Setting allocated memory
 
 Before setting your memory used by Minecraft, you should first check your system's memory.
 
@@ -70,13 +82,13 @@ Allocating more memory to Minecraft may reduce stutters and increase performance
 
 In Prism Launcher, you can set your memory by going to `Settings > Java > Maximum memory allocation`. I'd advise that you keep the `Minimum memory allocation` unchanged.
 
-If you are severely limited on memory, you can probably run the game fine even at 1GB with unmodified Additive. However, below 1GB is untested and not recommended.
+If you are severely limited on memory, you can probably run the game fine even at 1GB with unmodified Additive. However, below 1GB is untested and not recommended. If you need even more memory savings for whatever reason, you could try enabling ModernFix's `mixin.perf.deduplicate_location` at a cost of load time impact.
 
-### Change your Minecraft settings
+## Changing game settings
 
 By default, Additive does **not** change any of Minecraft's quality/graphics settings, except for simulation distance which will be explained later.
 
-#### General
+### General
 
 Start by changing your render distance. The higher this number, the further you can see. If you are playing on multiplayer, servers usually have a cap for render distance. On low-end systems, this should be set to 4-8 chunks. Mid-range systems will usually work well with 8-16 chunks, and high-end systems should be fine with 12-32 chunks.
 
@@ -84,9 +96,9 @@ After this, you can change your simulation distance. This is the distance in chu
 
 I recommend keeping V-Sync turned off unless you notice screen tearing, which in that case, turn it on or alternatively use Adaptive V-Sync. Adaptive V-Sync typically has less input latency than normal V-Sync.
 
-#### Quality
+### Quality
 
-**On mc1.21.11 or later, it is heavily recommended that you do not turn on "Improved Transparency" unless you absolutely need it's benefits, as it can impact performance significantly. Otherwise if you are below mc1.21.11, it is not recommended that you set the graphics preset to "Fabulous" for the same reason.**
+**On mc1.21.11 or later, it is heavily recommended that you do not turn on "Improved Transparency" unless you absolutely need it's benefits, as it can impact performance significantly. Likewise, if you are below mc1.21.11, it is not recommended that you set the graphics preset to "Fabulous" for the same reason.**
 
 If there are a lot of entities being rendered at once, it may help to reduce "Entity Distance". This is the distance at which entities are rendered.
 
@@ -96,6 +108,6 @@ Setting particles to a lower quality setting may also help with performance at c
 
 You can hover over any other setting to see a description of what it does and it's impact.
 
-### MacOS half resolution
+## MacOS half resolution
 
-If you're on a Mac with a Retina display, it is heavily recommended to enable the "half resolution" option under the "Extra" tab. You will have to restart the game after enabling this. Retina displays have very high native resolutions, so running Minecraft at half resolution won't affect quality noticeably while resulting in a large boost in performance and battery life.
+If you're on a Mac with a Retina display, it is heavily recommended enable the "half resolution" option under the "Extra" tab. You will have to restart the game after enabling this. Retina displays have very high native resolutions, so running Minecraft at half resolution won't affect quality noticeably while resulting in a large boost in performance and battery life.
