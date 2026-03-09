@@ -31,6 +31,6 @@ Yes, _you can_! Feel free to use this in any way you want! All I ask for is cred
 
 **If you are building a modpack with a large amount of content then I would heavily advise that you base it off [Adrenaline](/adrenaline) instead. Doing so would give you much easier control over the QoL mods available and would prevent mod conflicts. It may also run better. It'll also be less confusing to update and keep in sync in the future, as Adrenaline gets far less internal changes than Additive does.**
 
-**If you're building a modpack off Additive and publishing it, please be sure to change the config on Crash Assistant to match your project, such as the Discord links and strings, along with the modpack creators list. Or just remove Crash Assistant entirely if you don't want to deal with updating the modlist every time you make a change.**
+**If you're building a modpack off Additive and publishing it, please be sure to change the config on Crash Assistant to match your project, such as the Discord links and strings.**
 
 If you do make a fork, feel free to let me know and I can add it to the [Credits](/additive/credits) page 😎
