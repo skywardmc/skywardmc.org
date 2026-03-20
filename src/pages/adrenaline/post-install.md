@@ -56,6 +56,17 @@ You may want to install ThreadTweak if you notice stutters when generating chunk
 - Used to be shipped out of the box with Adrenaline, but [after some reasoning](https://github.com/skywardmc/adrenaline/issues/66), we have gotten rid of it.
 - If you do not want to use ThreadTweak, there are other mods that do the same thing, such as [StutterFix](https://modrinth.com/mod/stutterfix), or using the `mixin.perf.thread_priorities` mixin in ModernFix.
 
+## Other performance mods
+
+These optimizations do not improve actual gameplay performance, rather, they speed up other parts of the game. For example, resourcepack loading times, server info loading times, etc.
+
+These are considered out of scope for Adrenaline, as Adrenaline's main goal is to only focus on rendering/logic performance and memory usage. However, if you have opinions on expanding Adrenaline's scope to include these mods, [let us know here](https://github.com/skywardmc/adrenaline/issues/73#issuecomment-4052787021).
+
+- [Fast IP Ping](https://modrinth.com/mod/fast-ip-ping)
+- [FastQuit](https://modrinth.com/mod/fastquit)
+- [Language Reload](https://modrinth.com/mod/language-reload)
+- [quick pack](https://modrinth.com/mod/quick-pack)
+
 ## Setting allocated memory
 
 Before setting your memory used by Minecraft, you should first check your system's memory.
