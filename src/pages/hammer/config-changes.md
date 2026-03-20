@@ -14,9 +14,9 @@ Most mods are fine out of the box and don't typically need tweaking. They're alr
 - Minecraft
   - `simulationDistance` from `12` to `8`
 - Dynamic FPS
-  - Volume multipliers to `1.0`
-  - Out-of-focus FPS target from `1` to `2`
-  - Minimize GC activation to `true`
+  - `states.*.volume_multipliers` to `1.0`
+  - `states.unfocused.frame_rate_target` from `1` to `2`
+  - `states.invisible.run_garbage_collector` to `true`
 - FerriteCore
   - `useSmallThreadingDetector` to `true`
 - ModernFix
