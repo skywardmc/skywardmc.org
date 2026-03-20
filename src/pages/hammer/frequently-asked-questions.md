@@ -17,6 +17,14 @@ If you want to talk about the pack or have any questions, please use the [Discor
 
 I am currently looking for viable alternatives to Discord at the moment, but right now our official support channel is on Discord.
 
+## Aren't Config Manager and Crash Assistant QoL mods?
+
+_Technically_, yes. However, both barely affect the game during runtime. They pretty much only do things before the game is run, or if you experience a crash.
+
+Config Manager simply allows us to set custom defaults for config files, which prevents your configs from being overwritten with our defaults every time you update the modpack. It also lets you easily overwrite or reset your configurations with the modpack defaults in it's own config menu.
+
+Crash Assistant helps you analyze crash logs, and also makes it easier for users to access our server for support. It also contains features such as detecting and warning you if Minecraft is using an iGPU while a dGPU is available. It's tremendously increased the amount of support posts we receive, often improving the modpack for everyone, so that's why we have it built-in.
+
 ## Can I make a modpack with this?
 
 Yes, _you can_! Feel free to use this in any way you want! All I ask for is credit somewhere. You don't **have** to give credit - after all it's just a Minecraft modpack, but I spend lots of time maintaining this and it would help a ton. If you do want to give credit, just put the Modrinth page in there. Also, I would prefer you not to include this project's name (for example, something like "Hammer Plus") or a similar icon (like changing colors of the current icon) in the fork as it could confuse users and can make it seem like I endorse it.
