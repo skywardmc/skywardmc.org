@@ -22,6 +22,7 @@ _Want your modpack removed from this list? You can send me a message in the Disc
 - [BasicCraft](https://modrinth.com/modpack/basiccraft)
 - [Bedrock Reloaded](https://modrinth.com/modpack/bedrock-reloaded)
 - [Caffeine](https://modrinth.com/modpack/caffeine)
+- [CATpack](https://modrinth.com/modpack/catpack)
 - [Gud](https://modrinth.com/modpack/gud)
 - [LateCraft](https://modrinth.com/modpack/latecraft)
 - [Multiplicative](https://modrinth.com/modpack/multiplicative)
