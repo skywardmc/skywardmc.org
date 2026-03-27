@@ -35,7 +35,7 @@ This mod is not included in Adrenaline out of the box as it has [a couple issues
 
 ### [Moonrise](https://modrinth.com/mod/moonrise-opt)
 
-An official port of several Paper patches to Fabric, improves logic performance. Supersedes a few mods including ScalableLux and C2ME. If you add this, you will have to remove ScalableLux and C2ME, and possibly other mods.
+An official port of several Paper patches to Fabric, improves logic performance. Supersedes a few mods including C2ME, Fast Noise, and ScalableLux. If you add this, you will have to remove C2ME, Fast Noise, ScalableLux, and possibly other mods.
 
 This mod is not included in Adrenaline out of the box as it is [incompatible with a wide variety of mods](https://github.com/Tuinity/Moonrise/issues).
 
