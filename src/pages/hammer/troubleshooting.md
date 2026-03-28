@@ -17,6 +17,10 @@ There are also other ModernFix mixins which are enabled by default, which can ca
 
 If you are experiencing issues with GUI, try disabling ImmediatelyFast. ImmediatelyFast optimizes various parts of the immediate mode rendering code, which includes UI.
 
+## Java 26 crash on mc1.21.1
+
+On mc1.21.1, any version of Java 26 and above may cause a crash. See <https://github.com/skywardmc/hammer/issues/6>.
+
 ## Having other issues
 
 Join our [Discord server](https://discord.gg/36Tv44cYte) and I (or community members) can try to help with your issue as long as I'm not busy.
