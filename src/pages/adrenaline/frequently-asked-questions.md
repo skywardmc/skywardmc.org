@@ -5,17 +5,15 @@ description: "Frequently asked questions about Adrenaline."
 style: "adrenaline"
 ---
 
-## Can this cause data corruption?
+## Will this cause data corruption?
 
-Adrenaline is very unlikely to cause corruption to world data. However, I would always recommend keeping backups regardless of whether you're playing with mods.
+Adrenaline is very unlikely to cause corruption to world data. However, I would always heavily recommend keeping backups of important worlds regardless of whether you're playing with mods.
 
-If you want to be extra safe, you can remove ModernFix at a cost of performance and memory usage. You can also remove C2ME if you're running in a server environment, at a heavy cost of chunk generation speed.
+If you want to be extra safe, you can remove C2ME if you're running in a server environment, at a heavy cost of chunk generation speed. But I still recommend keeping backups.
 
 ## How can I provide feedback?
 
-If you want to talk about the pack or have any questions, please use the [Discord server](https://discord.gg/36Tv44cYte)! However, if you are asking for a feature to be added or giving a bug report, use the [issue tracker](https://github.com/intergrav/Adrenaline/issues) instead. Thanks!
-
-I am currently looking for viable alternatives to Discord at the moment, but right now our official support channel is on Discord.
+If you want to talk about the pack or have any questions, please use [Discord](https://discord.gg/36Tv44cYte) or [Matrix](https://matrix.to/#/#skywardmc:skywardmc.org)! However, if you want a feature to be added or sending in a bug report, use the [GitHub issue tracker](https://github.com/intergrav/Adrenaline/issues) instead.
 
 ## Aren't Config Manager and Crash Assistant QoL mods?
 
@@ -33,18 +31,16 @@ In Adrenaline, it's been intentionally configured to be out of your way. The but
 
 ## What's the difference from Fabulously Optimized?
 
-Adrenaline aims to not add any extra features, while also changing very little of Vanilla's default settings. It only improves performance.
+Both are great options, but we differ in philosophies:
 
-Adrenaline is more focused on user-customization and having a lighter experience out of the box. Adrenaline may be more suitable for low-end devices.
+- Adrenaline is more focused on user-customization and having a lighter experience out of the box. Adrenaline does not include any extra features other than optimizations. We also change much less settings - the only vanilla setting we change is the simulation distance.
+- Adrenaline also actively supports more versions at once, including popular modding versions, which can make it more suitable as a base to use for modpacks.
+- Adrenaline can be installed on servers, and has server-specific optimizations regarding networking and chunk performance improvements.
 
-Adrenaline also actively supports more versions at once, including popular modding versions, which can make it more suitable as a base to use for modpacks.
+## Can I base a modpack off of this?
 
-Our alternative to Fabulously Optimized is [Additive](/additive). You can see a comparison in [Additive/Frequently asked questions](/additive/frequently-asked-questions).
-
-## Can I make a modpack with this?
-
-Yes, _you can_! Feel free to use this in any way you want! All I ask for is credit somewhere. You don't **have** to give credit - after all it's just a Minecraft modpack, but I spend lots of time maintaining this and it would help a ton. If you do want to give credit, just put the Modrinth page in there. Also, I would prefer you not to include this project's name (for example, something like "Adrenaline Plus") or a similar icon (like changing colors of the current icon) in the fork as it could confuse users and can make it seem like I endorse it.
+Yes, _you can_! Feel free to use this in any way you want! You don't **have** to give credit - after all it's just a Minecraft modpack, but I spend lots of time maintaining this and it's much appreciated. Also, I would prefer you not to include this project's name (for example, something like "Adrenaline Plus") or a similar icon (like changing colors of the current icon) in the fork as it could confuse users and can make it seem like I endorse it.
 
 **If you're building a modpack off Adrenaline and publishing it, please be sure to change the config on Crash Assistant to match your project, such as the Discord links and strings.**
 
-If you do make a fork, feel free to let me know and I can add it to the [Credits](/adrenaline/credits) page 😎
+If you do make a fork, feel free to let me know and I can add it to the [Credits](/adrenaline/credits) page :)

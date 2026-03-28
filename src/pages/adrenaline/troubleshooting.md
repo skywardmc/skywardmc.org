@@ -5,7 +5,7 @@ description: "Troubleshooting information for Adrenaline."
 style: "adrenaline"
 ---
 
-Experiencing issues with other added mods? Here are a few things I advise you to do before submitting an issue to the repository:
+Experiencing issues with other added mods?
 
 ## Mod incompatibilities
 
@@ -19,4 +19,4 @@ If you are experiencing issues with GUI, try disabling ImmediatelyFast. Immediat
 
 ## Having other issues
 
-Join our [Discord server](https://discord.gg/36Tv44cYte) and I (or community members) can try to help with your issue as long as I'm not busy.
+Join our [Discord server](/discord) and I (or community members) can try to help with your issue as long as I'm not busy.

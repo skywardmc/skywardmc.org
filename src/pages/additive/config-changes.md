@@ -17,15 +17,11 @@ This page is a little less technical than Adrenaline's config changes page, as t
   - Disable better grass
 - CIT Resewn
   - Turn on broken paths
-    - _This is an experimental compatibility feature, but I have not had issues with it despite being enabled years ago_
+    - _This is an experimental compatibility feature, but we have not seen any issues with it despite being enabled years ago_
 - Fast Quit
   - Disable toasts
 - Iris Shaders
   - Disable update message
-- Mod Menu
-  - Use Icon button style
-  - Disable update checker
-  - Do not count libraries or children
 - Puzzle
   - Disable puzzle button
   - Disable puzzle integrations
