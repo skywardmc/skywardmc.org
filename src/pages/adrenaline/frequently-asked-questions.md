@@ -9,7 +9,7 @@ style: "adrenaline"
 
 Adrenaline is very unlikely to cause corruption to world data. However, I would always heavily recommend keeping backups of important worlds regardless of whether you're playing with mods.
 
-If you want to be extra safe, you can remove C2ME if you're running in a server environment, at a heavy cost of chunk generation speed. But I still recommend keeping backups.
+If you want to be extra safe, you can remove C2ME at a heavy cost of chunk generation speed. But I still recommend keeping backups.
 
 ## How can I provide feedback?
 
