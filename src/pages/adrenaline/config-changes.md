@@ -43,5 +43,3 @@ Most mods are fine out of the box and don't typically need tweaking. They're alr
 
 - Cull Less Leaves
   - `randomRejection` from `0.2` to `0.0`
-- Enhanced Block Entities
-  - `*_AO` to true

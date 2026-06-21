@@ -11,13 +11,14 @@ Out of the box, Adrenaline should be good enough for most people. However, this 
 
 There are some performance mods that Adrenaline does not come with, which you may want to take a look at after installation. Typically these mods are not included because they are either too experimental, cause many issues regarding mod compatibility, break/modify Vanilla features, or other reasons.
 
-- **[Nvidium](https://modrinth.com/mod/nvidium)**: Replacement rendering backend for Sodium that uses Nvidia-only OpenGL extensions to increase FPS by a significant amount. There is a [fork of Nvidium maintained by drouarb](https://github.com/drouarb/nvidium) that works on current Sodium versions, but _please keep in mind that it is in beta and you should use it at your own risk_.
-- **[Immersive Optimization](https://modrinth.com/mod/immersive-optimization)**: Entity tick scheduler that aims to improve logic performance without affecting Vanilla functionality. Not included out of the box as it has a couple issues regarding [mod incompatibilities and breaking Vanilla features](https://github.com/Luke100000/ImmersiveOptimization/issues).
+- **[C2ME OpenCL Acceleration Module](https://modrinth.com/mod/c2me-ocl)**: Experimental C2ME addon that provides hardware accelerated world generation through OpenCL. Expect major improvements on compatible GPUs. Will likely have significant compatibility issues with worldgen mods.
+- **[Nvidium](https://modrinth.com/mod/nvidium)**: Replacement rendering backend for Sodium that uses Nvidia-only OpenGL extensions to increase FPS by a significant amount. There is a [fork of Nvidium maintained by drouarb](https://github.com/drouarb/nvidium) that works on current Sodium versions, but _please keep in mind that it is in beta_.
+- **[Immersive Optimization](https://modrinth.com/mod/immersive-optimization)**: Entity tick scheduler that aims to improve logic performance. Not included out of the box as it could cause issues with Vanilla parity. Generally can provide significant benefits in large content modpacks.
 - **[Moonrise](https://modrinth.com/mod/moonrise-opt)**: An official port of several Paper patches to Fabric. Supersedes several mods such as C2ME, ScalableLux, and Noisium. Not included out of the box as it is [incompatible with a wide variety of mods](https://github.com/Tuinity/Moonrise/issues).
 - **[TT20](https://modrinth.com/mod/tt20)**: Recalculates the amount of ticks that something takes based on the TPS. Not included out of the box as it has a couple issues regarding [breaking Vanilla features](https://github.com/snackbag/tt20/issues).
 - **[ThreadTweak](https://modrinth.com/mod/threadtweak)**: Only needed if you notice stutters when generating chunks. Otherwise, ThreadTweak is likely not needed and could possibly reduce performance in a couple scenarios. If you do not want to use ThreadTweak, there are other mods that do the same thing, such as [StutterFix](https://modrinth.com/mod/stutterfix), or using the `mixin.perf.thread_priorities` mixin in ModernFix.
 
-There are also a few other mods which focus on optimizations do not improve actual gameplay performance, rather, they speed up other parts of the game. These are considered out of scope for Adrenaline, as Adrenaline's main goal is to only focus on rendering/logic performance and memory usage. If you have opinions on expanding Adrenaline's scope to include these mods, [let us know here](https://github.com/skywardmc/adrenaline/issues/73#issuecomment-4052787021).
+There are also a few other mods which focus on optimizations that do not improve actual gameplay performance, rather, they speed up other parts of the game. These are considered out of scope for Adrenaline, as Adrenaline's main goal is to only focus on rendering/logic performance and memory usage. If you have opinions on expanding Adrenaline's scope to include these mods, [let us know here](https://github.com/skywardmc/adrenaline/issues/73#issuecomment-4052787021).
 
 - **[Fast IP Ping](https://modrinth.com/mod/fast-ip-ping)**: Improves server info lookup time for literal IP server addresses.
 - **[FastQuit](https://modrinth.com/mod/fastquit)**: Allows you to instantly quit the world and let it save in the background.
@@ -45,9 +46,9 @@ By default, Adrenaline does **not** change any of Minecraft's quality/graphics s
 
 ## Other mods you may want
 
-Adrenaline is shipped extremely bare-bones and is designed to be flexible so that the user can customize their instance however they want to. Here are some commonly installed mods:
+Adrenaline is shipped very bare-bones and is designed to be flexible so that the user can customize their instance however they want to. Here are some commonly installed mods:
 
-- **[Sodium Extra](https://modrinth.com/mod/sodium-extra)**: Adds extra Sodium options, such as an FPS counter and more granular performance settings
+- **[Sodium Extra](https://modrinth.com/mod/sodium-extra)**: Adds an optional FPS counter and more granular performance settings
 - **[Iris Shaders](https://modrinth.com/mod/iris)**: Adds shader support
 - **[Controlify](https://modrinth.com/mod/controlify)**: Adds controller support
 - **[Vivecraft](https://modrinth.com/mod/vivecraft)**: Adds VR support (fun!)
