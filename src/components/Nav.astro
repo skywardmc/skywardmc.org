@@ -19,7 +19,7 @@ const navItems: NavItem[] = [
 ---
 
 <nav
-	class="flex gap-1 px-2 sm:px-4 overflow-y-hidden overflow-x-auto sticky top-0 z-50 bg-skywardmc-offwhite dark:bg-skywardmc-offgray"
+	class="flex gap-1 px-2 sm:px-4 overflow-x-auto sticky top-0 z-50 bg-skywardmc-offwhite dark:bg-skywardmc-offgray"
 >
 	{
 		navItems.map((item) => {
@@ -34,7 +34,7 @@ const navItems: NavItem[] = [
 						"px-4 py-0.5 rounded-t-sm inline-flex gap-1 items-center",
 						item.alignEnd && "ms-auto",
 						isActive
-							? "bg-skywardmc-white dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray"
+							? "tab-active bg-skywardmc-white dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray"
 							: "hover:bg-skywardmc-white/40 hover:dark:bg-skywardmc-black/40 hover:sm:dark:bg-skywardmc-gray/40",
 					]}
 				>
@@ -45,3 +45,46 @@ const navItems: NavItem[] = [
 		})
 	}
 </nav>
+
+<style>
+	.tab-active {
+		position: relative;
+		--tab-active-bg: var(--color-skywardmc-white);
+	}
+
+	.tab-active::before,
+	.tab-active::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		width: var(--radius-xs);
+		height: var(--radius-xs);
+		pointer-events: none;
+	}
+
+	.tab-active::before {
+		left: calc(var(--radius-xs) * -1);
+		border-bottom-right-radius: var(--radius-sm);
+		box-shadow: calc(var(--radius-xs) / 2) calc(var(--radius-xs) / 2) 0
+			calc(var(--radius-xs) / 2) var(--tab-active-bg);
+	}
+
+	.tab-active::after {
+		right: calc(var(--radius-xs) * -1);
+		border-bottom-left-radius: var(--radius-xs);
+		box-shadow: calc(var(--radius-xs) / -2) calc(var(--radius-xs) / 2) 0
+			calc(var(--radius-xs) / 2) var(--tab-active-bg);
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.tab-active {
+			--tab-active-bg: var(--color-skywardmc-black);
+		}
+	}
+
+	@media (min-width: 40rem) and (prefers-color-scheme: dark) {
+		.tab-active {
+			--tab-active-bg: var(--color-skywardmc-gray);
+		}
+	}
+</style>
