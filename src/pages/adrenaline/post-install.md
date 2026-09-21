@@ -36,7 +36,7 @@ These mods only operate server-side or in singleplayer.
 
 These do not improve actual gameplay performance, rather, they speed up other parts of the game. These are considered out of scope for Adrenaline, as Adrenaline's main goal is to only focus on rendering/logic performance and memory usage. If you have opinions on expanding Adrenaline's scope to include these mods, [let us know here](https://github.com/skywardmc/adrenaline/issues/73#issuecomment-4052787021). These _are_ included out of the box in Additive.
 
-- **[Fast IP Ping](https://modrinth.com/mod/fast-ip-ping)**: Improves server info lookup time for literal IP server addresses.
+- **[Fast Server Pings](https://modrinth.com/mod/fastserverpings)**: Rewritten server ping pipeline using optimized Netty I/O, along with SWR caching.
 - **[FastQuit](https://modrinth.com/mod/fastquit)**: Allows you to instantly quit the world and let it save in the background.
 - **[Language Reload](https://modrinth.com/mod/language-reload)**: Reduces language load times and also adds fallbacks.
 - **[quick pack](https://modrinth.com/mod/quick-pack)**: Significantly improves loading speeds for large resourcepacks.
