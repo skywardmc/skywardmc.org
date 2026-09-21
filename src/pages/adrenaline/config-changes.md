@@ -27,7 +27,7 @@ Most mods are fine out of the box and don't typically need tweaking. They're alr
   - `count_children` to `false`
 - ModernFix
   - `mixin.perf.dynamic_entity_renderers` to `true`
-  - `mixin.perf.dynamic_resources` to `true`
+  - `mixin.perf.dynamic_resources` to `true` (excluding mc1.21.11)
   - `mixin.perf.faster_item_rendering` to `true`
 - Very Many Players _(server)_
   - `show_async_loading_messages` to `false`

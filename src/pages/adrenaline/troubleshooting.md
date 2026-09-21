@@ -14,6 +14,7 @@ We generally try to not include mods, or features of mods, that cause many incom
 - [C2ME](https://modrinth.com/mod/c2me-fabric) significantly improves chunk performance, but has known incompatibilities
   - [TeamTwilight/twilightforest#2318](https://github.com/TeamTwilight/twilightforest/pull/2318)
   - [See C2ME's issue tracker](https://github.com/RelativityMC/C2ME-fabric/issues)
+- [Fast Surface](https://modrinth.com/mod/zfastsurface) or [Material Rule Compiler](https://modrinth.com/mod/zmaterial-rule-compiler) may have compatibility issues with certain worldgen mods
 - Entity Culling may possibly have some compatibility issues with certain mods
   - [See Entity Culling's issue tracker](https://github.com/tr7zw/EntityCulling/issues)
 
