@@ -4,10 +4,9 @@
 	"dependencies": {
 		"@astrojs/mdx": "^6.0.3",
 		"@astrojs/sitemap": "^3.7.3",
-		"@fontsource-variable/geist-mono": "^5.2.8",
-		"@fontsource-variable/inter": "^5.2.8",
+		"@fontsource-variable/atkinson-hyperlegible-mono": "^5.3.0",
+		"@fontsource-variable/atkinson-hyperlegible-next": "^5.3.0",
 		"@fontsource-variable/montserrat": "^5.2.8",
-		"@fontsource-variable/source-serif-4": "^5.2.9",
 		"@iconify-json/lucide": "^1.2.112",
 		"@iconify-json/simple-icons": "^1.2.86",
 		"@tailwindcss/typography": "^0.5.20",

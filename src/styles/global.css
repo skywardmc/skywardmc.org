@@ -4,9 +4,8 @@
 @plugin "@tailwindcss/typography";
 
 @import "@fontsource-variable/montserrat";
-@import "@fontsource-variable/inter";
-@import "@fontsource-variable/source-serif-4";
-@import "@fontsource-variable/geist-mono";
+@import "@fontsource-variable/atkinson-hyperlegible-next";
+@import "@fontsource-variable/atkinson-hyperlegible-mono";
 
 @theme {
 	/* neutral colors (off* is typically used for text and site background, others are used for content backgrounds) */
@@ -31,15 +30,11 @@
 	/* font families */
 	--font-title: "Montserrat Variable", var(--font-sans), sans-serif;
 	--font-sans:
-		"Inter Variable", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+		"Atkinson Hyperlegible Next Variable", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
 		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	--font-serif:
-		"Source Serif 4 Variable", ui-serif, Georgia, Cambria, "Times New Roman",
-		Times, serif;
 	--font-mono:
-		"Geist Mono Variable", ui-monospace, SFMono-Regular, Menlo, Monaco,
+		"Atkinson Hyperlegible Mono Variable", ui-monospace, SFMono-Regular, Menlo, Monaco,
 		Consolas, "Liberation Mono", "Courier New", monospace;
-	--font-cursive: cursive;
 }
 
 :root {
