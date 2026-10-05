@@ -13,7 +13,7 @@ If you want to be extra safe, you can remove ModernFix at a cost of performance 
 
 ## How can I provide feedback?
 
-If you want to talk about the pack or have any questions, please use the [Discord server](https://discord.gg/36Tv44cYte)! However, if you are asking for a feature to be added or giving a bug report, use the [issue tracker](https://github.com/skywardmc/hammer/issues) instead. Thanks!
+If you want to talk about the pack or have any questions, please use the [Discord server](/discord)! However, if you are asking for a feature to be added or giving a bug report, use the [issue tracker](https://github.com/skywardmc/hammer/issues) instead. Thanks!
 
 I am currently looking for viable alternatives to Discord at the moment, but right now our official support channel is on Discord.
 

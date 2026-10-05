@@ -13,7 +13,7 @@ If you want to be extra safe, you can remove C2ME at a heavy cost of chunk gener
 
 ## How can I provide feedback?
 
-If you want to talk about the pack or have any questions, please use [Discord](https://discord.gg/36Tv44cYte) or [Matrix](https://matrix.to/#/#skywardmc:skywardmc.org)! However, if you want a feature to be added or sending in a bug report, use the [GitHub issue tracker](https://github.com/intergrav/Additive/issues) instead.
+If you want to talk about the pack or have any questions, please use [Discord](/discord) or [Matrix](/matrix)! However, if you want a feature to be added or sending in a bug report, use the [GitHub issue tracker](https://github.com/intergrav/Additive/issues) instead.
 
 ## What's the difference from Fabulously Optimized?
 

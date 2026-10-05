@@ -23,4 +23,4 @@ On mc1.21.1, any version of Java 26 and above may cause a crash. See <https://gi
 
 ## Having other issues
 
-Join our [Discord server](https://discord.gg/36Tv44cYte) and I (or community members) can try to help with your issue as long as I'm not busy.
+Join our [Discord server](/discord) and I (or community members) can try to help with your issue as long as I'm not busy.
