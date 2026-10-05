@@ -95,82 +95,76 @@ const usersClass =
 ---
 
 <div class="not-prose">
-	{
-		showIntroduction && (
-			<div
+	{showIntroduction && (
+		<div
+			class={
+				align === "end"
+					? "flex items-center justify-end gap-4"
+					: align === "center"
+						? "flex items-center justify-center gap-4"
+						: "flex items-center justify-start gap-4"
+			}
+		>
+			<img
+				src={icon}
+				alt={`${project} icon`}
+				class:list={["size-12 rounded-sm", align === "end" && "order-last"]}
+				loading="lazy"
+				fetchpriority="low"
+			/>
+			<p
 				class={
 					align === "end"
-						? "flex items-center justify-end gap-4"
+						? "max-w-sm text-end"
 						: align === "center"
-							? "flex items-center justify-center gap-4"
-							: "flex items-center justify-start gap-4"
+							? "max-w-sm text-center"
+							: "max-w-sm text-start"
 				}
 			>
-				<img
-					src={icon}
-					alt={`${project} icon`}
-					class:list={["size-12 rounded-sm", align === "end" && "order-last"]}
-					loading="lazy"
-					fetchpriority="low"
-				/>
-				<p
-					class={
-						align === "end"
-							? "max-w-sm text-end"
-							: align === "center"
-								? "max-w-sm text-center"
-								: "max-w-sm text-start"
-					}
-				>
-					{project} is made possible by the wonderfully talented Minecraft
-					modding community!
-				</p>
-			</div>
-		)
-	}
+				{project} is made possible by the wonderfully talented Minecraft modding
+				community!
+			</p>
+		</div>
+	)}
 
-	{
-		coloredCreditSections.map(({ label, users }) => (
-			<div class={sectionClass}>
-				<p>{label}</p>
-				<div class={usersClass}>
-					{users.map(
-						({ name, href, avatarUrl, since, until, avatarColors }) => (
-							<a
-								href={href}
-								class="inline-flex gap-1 items-center hover:underline px-2 py-0.5 rounded-xs bg-skywardmc-offwhite dark:bg-skywardmc-offgray"
-								style={
-									avatarColors
-										? `background-color: ${avatarColors.background}; color: ${avatarColors.foreground}`
-										: undefined
-								}
-							>
-								{avatarUrl && (
-									<Image
-										src={avatarUrl}
-										width={16}
-										height={16}
-										densities={[1, 2]}
-										layout="none"
-										alt=""
-										class="size-4 shrink-0 rounded-xs"
-										loading="lazy"
-										fetchpriority="low"
-									/>
-								)}
-								<span>
-									{name +
-										(since
-											? until
-												? `, from ${since} to ${until}`
-												: `, since ${since}`
-											: "")}
-								</span>
-							</a>
-						),
-					)}
-				</div>
+	{coloredCreditSections.map(({ label, users }) => (
+		<div class={sectionClass}>
+			<p>{label}</p>
+			<div class={usersClass}>
+				{users.map(({ name, href, avatarUrl, since, until, avatarColors }) => (
+					<a
+						href={href}
+						class="inline-flex gap-1 items-center hover:underline px-2 py-0.5 rounded-xs bg-skywardmc-offwhite dark:bg-skywardmc-offgray"
+						style={
+							avatarColors
+								? `background-color: ${avatarColors.background}; color: ${avatarColors.foreground}`
+								: undefined
+						}
+					>
+						{avatarUrl && (
+							<Image
+								src={avatarUrl}
+								width={16}
+								height={16}
+								densities={[1, 2]}
+								layout="none"
+								alt=""
+								class="size-4 shrink-0 rounded-xs"
+								loading="lazy"
+								fetchpriority="low"
+							/>
+						)}
+						<span>
+							{name +
+								(since
+									? until
+										? `, from ${since} to ${until}`
+										: `, since ${since}`
+									: "")}
+						</span>
+					</a>
+				))}
 			</div>
-		))
-	}
+		</div>
+	))}
 </div>

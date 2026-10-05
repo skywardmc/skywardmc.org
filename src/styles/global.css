@@ -30,11 +30,8 @@
 	/* font families */
 	--font-title: "Montserrat Variable", var(--font-sans), sans-serif;
 	--font-sans:
-		"Atkinson Hyperlegible Next Variable", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	--font-mono:
-		"Atkinson Hyperlegible Mono Variable", ui-monospace, SFMono-Regular, Menlo, Monaco,
-		Consolas, "Liberation Mono", "Courier New", monospace;
+		"Atkinson Hyperlegible Next Variable", ui-sans-serif, system-ui, sans-serif;
+	--font-mono: "Atkinson Hyperlegible Mono Variable", ui-monospace, monospace;
 }
 
 :root {

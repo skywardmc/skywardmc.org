@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Search from "astro-pagefind/components/Search";
+import Search from "astro-pagefind/components/Search.astro";
 ---
 
 <Layout title="Find" description="Search all content of skywardmc.org">
@@ -14,25 +14,20 @@ import Search from "astro-pagefind/components/Search";
 
 <style>
 	:root {
-		--pagefind-ui-scale: 0.75;
-		--pagefind-ui-primary: var(--color-skywardmc-blue);
-		--pagefind-ui-text: var(--color-skywardmc-offgray);
-		--pagefind-ui-background: var(--color-skywardmc-offwhite);
-		--pagefind-ui-border: none;
-		--pagefind-ui-tag: var(--color-skywardmc-offgray);
-		--pagefind-ui-border-width: none;
-		--pagefind-ui-border-radius: 0.125rem;
-		--pagefind-ui-image-border-radius: 0.125rem;
-		--pagefind-ui-image-box-ratio: 16 / 10;
-		--pagefind-ui-font: var(--default-font-family);
+		--pf-font: var(--font-sans);
+		--pf-text: var(--color-skywardmc-offgray);
+		--pf-background: var(--color-skywardmc-offwhite);
+		--pf-mark: var(--color-skywardmc-blue);
+		--pf-outline-focus: var(--color-skywardmc-blue);
+		--pf-border: transparent;
+		--pf-border-radius: 0.125rem;
+		--pf-searchbox-max-width: 100%;
 	}
 
 	@media (prefers-color-scheme: dark) {
 		:root {
-			--pagefind-ui-primary: var(--color-skywardmc-blue);
-			--pagefind-ui-text: var(--color-skywardmc-offwhite);
-			--pagefind-ui-background: var(--color-skywardmc-offgray);
-			--pagefind-ui-tag: var(--color-skywardmc-offwhite);
+			--pf-text: var(--color-skywardmc-offwhite);
+			--pf-background: var(--color-skywardmc-offgray);
 		}
 	}
 </style>

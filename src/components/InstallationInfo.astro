@@ -10,18 +10,15 @@ const commitHash = "9cfa9778858276ded049ac536c875007fefe2e5d";
 
 <div class="mb-6 grid grid-cols-1 md:grid-cols-2 gap-6">
 	<article class="not-prose flex flex-col gap-6">
-		<p
-			class="text-xs flex items-center gap-2 text-skywardmc-offgray/80 dark:text-skywardmc-offwhite/80"
-		>
-			<img src="/icons/minecraft.png" class="size-5 rounded-xs" /> Minecraft Launcher
+		<p class="text-xs flex items-center gap-2 text-skywardmc-offgray/80 dark:text-skywardmc-offwhite/80">
+			<img src="/icons/minecraft.png" class="size-5 rounded-xs" /> Minecraft
+			Launcher
 		</p>
 		<p>
 			To install Adrenaline or Additive on the Minecraft launcher, you can use
 			the Additive installer.
 		</p>
-		<article
-			class="not-prose py-4 px-6 flex flex-col gap-4 text-skywardmc-offgray dark:text-skywardmc-offwhite border border-skywardmc-offgray/20 dark:border-skywardmc-offwhite/20 dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray rounded-xs shadow-xs"
-		>
+		<article class="not-prose py-4 px-6 flex flex-col gap-4 text-skywardmc-offgray dark:text-skywardmc-offwhite border border-skywardmc-offgray/20 dark:border-skywardmc-offwhite/20 dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray rounded-xs shadow-xs">
 			<div class="flex items-center gap-4">
 				<IconLink
 					href={`https://github.com/skywardmc/additive-installer/releases/download/v${version}/additive-installer-${version}.jar`}
@@ -30,29 +27,32 @@ const commitHash = "9cfa9778858276ded049ac536c875007fefe2e5d";
 				/>
 				<div class="flex flex-col">
 					<h1 class="font-medium">Additive Installer</h1>
-					<p
-						class="text-xs font-mono text-skywardmc-offgray/80 dark:text-skywardmc-offwhite/80"
-					>
+					<p class="text-xs font-mono text-skywardmc-offgray/80 dark:text-skywardmc-offwhite/80">
 						<a
 							href={`https://github.com/skywardmc/additive-installer/releases/v${version}`}
-							class="hover:underline">v{version}</a
+							class="hover:underline"
 						>
+							v{version}
+						</a>
 						•
 						<a
 							href={`https://github.com/skywardmc/additive-installer/commit/${commitHash}`}
-							class="hover:underline">{commitHash.slice(0, 7)}</a
+							class="hover:underline"
 						>
+							{commitHash.slice(0, 7)}
+						</a>
 					</p>
 				</div>
 			</div>
 			<p class="text-xs">
-				If you can't open the installer, try running <code
-					class="font-mono text-skywardmc-offgray/80 dark:text-skywardmc-offwhite/80"
-					>java -jar additive-installer-{version}.jar</code
-				> in a terminal. <a
-					href="https://www.java.com/download"
-					class="font-medium underline">You need Java installed.</a
-				>
+				If you can't open the installer, try running{" "}
+				<code class="font-mono text-skywardmc-offgray/80 dark:text-skywardmc-offwhite/80">
+					java -jar additive-installer-{version}.jar
+				</code>{" "}
+				in a terminal.{" "}
+				<a href="https://www.java.com/download" class="font-medium underline">
+					You need Java installed.
+				</a>
 			</p>
 		</article>
 		<Picture
@@ -66,9 +66,7 @@ const commitHash = "9cfa9778858276ded049ac536c875007fefe2e5d";
 	</article>
 
 	<article class="not-prose flex flex-col gap-6">
-		<p
-			class="text-xs flex items-center gap-2 text-skywardmc-offgray/80 dark:text-skywardmc-offwhite/80"
-		>
+		<p class="text-xs flex items-center gap-2 text-skywardmc-offgray/80 dark:text-skywardmc-offwhite/80">
 			<img src="/icons/prismlauncher.svg" class="size-5 rounded-xs" />
 			<img
 				src="/icons/modrinth.svg"
@@ -81,9 +79,7 @@ const commitHash = "9cfa9778858276ded049ac536c875007fefe2e5d";
 			To install Adrenaline or Additive on other launchers, read Modrinth's
 			documentation.
 		</p>
-		<article
-			class="not-prose py-4 px-6 flex flex-col gap-4 text-skywardmc-offgray dark:text-skywardmc-offwhite border border-skywardmc-offgray/20 dark:border-skywardmc-offwhite/20 dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray rounded-xs shadow-xs"
-		>
+		<article class="not-prose py-4 px-6 flex flex-col gap-4 text-skywardmc-offgray dark:text-skywardmc-offwhite border border-skywardmc-offgray/20 dark:border-skywardmc-offwhite/20 dark:bg-skywardmc-black sm:dark:bg-skywardmc-gray rounded-xs shadow-xs">
 			<div class="flex items-center gap-4">
 				<IconLink
 					href="https://support.modrinth.com/en/articles/8802250-modpacks-on-modrinth"
@@ -92,9 +88,7 @@ const commitHash = "9cfa9778858276ded049ac536c875007fefe2e5d";
 				/>
 				<div class="flex flex-col">
 					<h1 class="font-medium">Modpacks on Modrinth</h1>
-					<p
-						class="text-xs font-mono text-skywardmc-offgray/80 dark:text-skywardmc-offwhite/80"
-					>
+					<p class="text-xs font-mono text-skywardmc-offgray/80 dark:text-skywardmc-offwhite/80">
 						Modrinth Documentation
 					</p>
 				</div>

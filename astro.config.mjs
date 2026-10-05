@@ -5,8 +5,8 @@ import tailwindcss from "@tailwindcss/vite";
 import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
 import mdx from "@astrojs/mdx";
+import { satteri } from "@astrojs/markdown-satteri";
 import pagefind from "astro-pagefind";
-import { visit } from "unist-util-visit";
 
 export default defineConfig({
 	site: "https://skywardmc.org",
@@ -23,19 +23,24 @@ export default defineConfig({
 		plugins: [tailwindcss()],
 	},
 	markdown: {
-		rehypePlugins: [
-			() => (tree) =>
-				visit(tree, "element", (node, index, parent) => {
-					if (node.tagName === "table" && parent) {
-						parent.children[index] = {
-							type: "element",
-							tagName: "div",
-							properties: { className: ["overflow-x-auto"] },
-							children: [node],
-						};
-					}
-				}),
-		],
+		processor: satteri({
+			hastPlugins: [
+				{
+					name: "table-wrapper",
+					element: {
+						filter: ["table"],
+						visit(node, ctx) {
+							ctx.wrapNode(node, {
+								type: "element",
+								tagName: "div",
+								properties: { className: ["overflow-x-auto"] },
+								children: [],
+							});
+						},
+					},
+				},
+			],
+		}),
 	},
 	integrations: [
 		sitemap(),

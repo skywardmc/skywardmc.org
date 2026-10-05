@@ -16,6 +16,8 @@ const { href, logo, alt, background, logoHeight = "h-8" } = Astro.props;
 		style={`background-image: url(${background})`}
 	>
 		<img alt={alt} src={logo} class={logoHeight} />
-		<p class="font-medium"><slot /></p>
+		<p class="font-medium">
+			<slot />
+		</p>
 	</article>
 </a>

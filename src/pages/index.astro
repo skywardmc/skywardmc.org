@@ -9,9 +9,7 @@ import ProjectCard from "../components/ProjectCard.astro";
 	description="SkywardMC is an organization that makes popular Minecraft modpacks, mods, and tools such as Adrenaline and Additive."
 	style="skywardmc"
 >
-	<section
-		class="p-4 sm:p-6 mb-4 flex flex-col items-center text-center gap-4 sm:gap-6 text-skywardmc-black bg-[url(/branding/skywardmc/background.svg)] bg-center bg-cover rounded-xs"
-	>
+	<section class="p-4 sm:p-6 mb-4 flex flex-col items-center text-center gap-4 sm:gap-6 text-skywardmc-black bg-[url(/branding/skywardmc/background.svg)] bg-center bg-cover rounded-xs">
 		<img alt="SkywardMC" src="/branding/skywardmc/text-logo.svg" class="h-20" />
 		<p class="font-medium">
 			We're a community that makes useful Minecraft modpacks, mods, tools, and
@@ -24,8 +22,14 @@ import ProjectCard from "../components/ProjectCard.astro";
 			>
 				Modrinth
 			</IconLink>
-			<IconLink href="/discord" icon="simple-icons:discord"> Discord </IconLink>
-			<IconLink href="/matrix" icon="simple-icons:matrix"> Matrix </IconLink>
+			<IconLink href="/discord" icon="simple-icons:discord">
+				{" "}
+				Discord{" "}
+			</IconLink>
+			<IconLink href="/matrix" icon="simple-icons:matrix">
+				{" "}
+				Matrix{" "}
+			</IconLink>
 			<IconLink href="https://github.com/skywardmc" icon="simple-icons:github">
 				GitHub
 			</IconLink>
@@ -67,18 +71,17 @@ import ProjectCard from "../components/ProjectCard.astro";
 	</section>
 	<section class="prose prose-skywardmc dark:prose-invert max-w-full">
 		<p>
-			SkywardMC was started in 2021 by <a href="https://github.com/intergrav"
-				>Devin/intergrav</a
-			> (initially known as Devin's Projects), and has grown to become a larger group
-			of people maintaining various different Minecraft-related things.
+			SkywardMC was started in 2021 by{" "}
+			<a href="https://github.com/intergrav">Devin/intergrav</a> (initially
+			known as Devin's Projects), and has grown to become a larger group of
+			people maintaining various different Minecraft-related things.
 		</p>
 		<p>
 			This website was built with <a href="https://astro.build">Astro</a>,
-			here's the <a href="https://github.com/skywardmc/skywardmc.org"
-				>source code</a
-			>. It's heavily based off Devin's personal website, <a
-				href="https://devins.page">devins.page</a
-			>.
+			here's the{" "}
+			<a href="https://github.com/skywardmc/skywardmc.org">source code</a>. It's
+			heavily based off Devin's personal website,{" "}
+			<a href="https://devins.page">devins.page</a>.
 		</p>
 	</section>
 </Layout>
